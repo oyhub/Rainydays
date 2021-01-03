@@ -1,80 +1,146 @@
 <!DOCTYPE html>
-<html>
-  <head>
-    <title>Rainydays | Phusing the comfort zone</title>
-  </head>
-  <body>
-    <!-- Menu and Hero Image-->
-    <header>
-      <nav>
-        <img src="images/RainyDays_Logo_white.png" alt="logo">
-        <ul>
-          <li><a href="men.html">Men</a></li>
-          <li><a href="women.html">Women</a></li>
-          <li><a href="about.html">About</a></li>
-          <li><a href="contact.html">Contact</a></li>
-        </ul>
-        <img src="" alt="search">
-        <img src="" alt="user">
-        <img src="" alt="cart">
-      </nav>
-      <section>
-        <!--Hero Image as background-->
-        <p>MULTIPURPOSE JACKETS</p>
-        <p>For all your adcentures</p>
-        <button>LATEST ARRIVALVS</button>
-      </section>
-    </header>
-    <!--Main Page-->
-    <main>
-      <h1>See our Jackets</h1>
-      <img src="images/simon-migaj.jpg" alt="Men">
-      <img src="images/ali-kazal.jpg" alt="Women">
-      <img src="images/alireza-shojaei.jpg" alt="Get out, Get movin, Be active">
-      <div>
-        Either you're going hiking, exploring, skiing, canoeing, or just want to be outside. Our jackets will suit you're needs."
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles/style.css">
+  <link rel="stylesheet" href="https://use.typekit.net/onj7zyw.css">
+  <script src="https://kit.fontawesome.com/fa5b77eb46.js" crossorigin="anonymous"></script>
+  <title>Rainydays</title>
+</head>
+<body>
+
+  <!--Header and nav-->
+  <header>
+    <a href="index.html" class="logo"><img src="/images/RainyDays_Logo_white.png" alt="Logo"></a>
+    <nav>
+      <ul>
+        <li><a href="men.html">men</a></li>
+        <li><a href="women.html">women</a></li>
+        <li><a href="about.html">about</a></li>
+        <li><a href="contact.html">contact</a></li>
+      </ul>
+    </nav>
+    <ul class="iconmenu">
+      <li><i class="fas fa-search"></i></li>
+      <li><i class="fas fa-user"></i></li>
+      <li><i class="fas fa-shopping-cart"></i></li>
+    </ul>
+  </header>
+  
+<!--Hero Image-->
+  <section class="hero">
+    <div class="hero__content">
+      <h1>Multipurpose jackets</h1>
+      <p>for all your adventures</p>
+      <a href="#latest-homepage">Latest arrivals</a>
+    </div>
+  </section>
+
+<!--Main-->
+  <main>
+    <h2>See our jackets</h2>
+    <div class="container">
+      <div class="main__box main__men">
+        <p>Men</p>
       </div>
-    </main>
-    <!--Latest Arrivals-->
+      <div class="main__box main__women">
+        <p>women</p>
+      </div>
+      <div class="main__box main__motivation">
+        <p>Get <span class="orange-text">out,</span></p>
+        <p><span class="orange-text">Get</span> movin,</p>
+        <p>Be <span class="orange-text">active</span></p>
+      </div>
+        <div class="card-text main__box main__p"><p>Either you're going hiking, exploring, skiing, canoeing, or just want to be outside. Our jackets will suit you're needs.</p>
+      </div>
+    </div>
+  </main>
+
+<!--Latest Arrivals-->
+  <section id="latest-homepage">
+    <h2>Latest Arrivals</h2>
+    <div class="container">
+      <div class="jacket_yellow jacket">
+        <img src="images/vectors/01.png" alt="Yellow Hike Jacket">
+        <h3>Yellow Hike</h3>
+        <p>Jackets for everyday use</p>
+        <div class="stars">
+          <p>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="far fa-star"></i>
+          </p>
+        </div>
+        <p class="price">1999,-</p>
+      </div>
+      <div class="jacket_red jacket">
+        <img src="images/vectors/03.png" alt="Red Hike Jacket">
+        <h3>Red Hike</h3>
+        <p>Jackets for everyday use</p>
+        <div class="stars">
+          <p>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="far fa-star"></i>
+          </p>
+        </div>
+        <p class="price">1999,-</p>
+      </div>
+      <div class="jacket_green jacket">
+        <img src="images/vectors/02.png" alt="Green Chill">
+        <h3>Green Chill</h3>
+        <p>Jackets for everyday use</p>
+        <div class="stars">
+          <p>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="far fa-star"></i>
+          </p>
+        </div>
+        <p class="price">1999,-</p>
+      </div>
+    </div>
+  </section>
+
+<!--Footer-->
+  <footer>
     <section>
-      <h1>Latest Arrivalvs</h1>
-      <!--List of jackets here-->
+      <div>
+        <h4>Jackets</h4>
+        <a href="men.html">Men</a>
+        <a href="women.html">Women</a>
+      </div>
+      <div>
+        <h4>Rainydays</h4>
+        <a href="index.html" class="footer-current">Home</a>
+        <a href="contact.html">Contact</a>
+        <a href="about.html">About</a>
+      </div>
+      <div>
+        <h4>Account</h4>
+        <a href="#">Login</a>
+        <a href="#">Create Account</a>
+      </div>
+      <div>
+        <h4>Social</h4>
+        <div class="social">
+          <a href="#"><i class="fab fa-facebook"></i></a>
+          <a href="#"><i class="fab fa-instagram"></i></a>
+          <a href="#"><i class="fab fa-twitter"></i></a>
+        </div>
+      </div>
     </section>
-    <!--Footer-->
-    <footer>
-      <div>
-        <p>Jackets</p>
-        <ul>
-          <li><a href="men.html">Men</a></li>
-          <li><a href="women.html">Women</a></li>
-        </ul>
-      </div>
-      <div>
-        <p>Rainydays</p>
-        <ul>
-          <li><a href="index.html">Home</a></li>
-          <li><a href="contact.html">Contact</a></li>
-          <li><a href="about.html">About</a></li>
-        </ul>
-      </div>
-      <div>
-        <p>Account</p>
-        <ul>
-          <li>Login</li>
-          <li>Create Account</li>
-        </ul>
-      </div>
-      <div>
-        <p>Social</p>
-        <img src="" alt="Facebook">
-        <img src="" alt="Instagram">
-        <img src="" alt="Twitter">
-      </div>
-      <div>
-        <p>© 2020, Rainydays</p>
-        <p>PHUSING THE COMFORT ZONE</p>
-      </div>
-      
-    </footer>
-  </body>
+    <section class="copyright">
+      <p>&copy; 2021, Rainydays</p>
+      <h4>Phusing the comfort zone</h4>
+    </section>
+  </footer>
+</body>
 </html>

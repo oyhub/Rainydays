@@ -1,0 +1,324 @@
+/*Global*/
+@import url("https://use.typekit.net/onj7zyw.css");
+
+* {
+    box-sizing: border-box;
+  }
+
+body{
+    font-family: Lato, Tenon, Verdana, sans-serif;
+    font-size: 20px;
+    font-weight: normal;
+    background-color: #d4e0e2;
+    margin: 0 auto;
+    position: relative;
+    }
+a {
+    text-decoration: none;
+    color: #fff;
+}
+ul {
+    list-style-type: none;
+}
+ul li{
+    display: inline;
+    padding-left: 1em;
+}
+h1 {
+    font-size: 40px;
+    color: #fff;
+    text-transform: uppercase;
+    font-weight: normal;
+}
+h2 {
+    font-family: tenon, lato, verdana, sans-serif;
+    font-size: 46px;
+    font-weight: 500;
+    margin: 0;
+}
+h3 {
+    font-family: tenon, lato, verdana, sans-serif;
+    font-size: 23px;
+    font-weight: 500;
+    margin: 0;
+}
+p {
+    font-size: 24px;
+    font-weight: normal;
+}
+
+.orange-text{
+    color: #d97904;
+}
+/*Header*/
+header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    height: 126px;
+    width: 100%;
+    margin-bottom: 10px;
+    top: 0;
+    position: fixed;
+    background-color: rgba(0, 0, 0, 0.2);
+    backdrop-filter: blur(10px);
+    z-index: 999;
+}
+.logo {
+    flex: 1;
+    height: 126px;
+    padding-left: 50px;
+}
+.logo img {
+    height: inherit;
+}
+nav {
+    flex: 3;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    font: 35px Lato, verdana, sans-serif;
+    text-transform: capitalize;
+    }
+nav a{
+    color: #fff;
+}
+.iconmenu {
+    flex: 1;
+    color: #fff;
+}
+
+/*Hero*/
+.hero {
+    background-image: url(../images/kamil-kalbarczyk03.jpg);
+    background-position: right;
+    height: 80vh;
+    width: 100vw;
+    position: relative;
+}
+
+.hero__content {
+    position: absolute;
+    bottom: 10em;
+    right: 8em;
+    text-align: center;
+    color: #fff;
+}
+
+.hero__content p,
+.hero__content a {
+    text-transform: uppercase;
+    margin-bottom: 1.5em;
+}
+.hero__content a {
+    background-color: rgba(255, 255, 255, 0.25);
+    backdrop-filter: blur(10px);
+    padding: 13px 30px;
+    border: 2px solid #fff;
+    border-radius: 10px;
+}
+
+/*Homepage Main*/
+main {
+    width: 1300px;
+    margin: 0 auto;
+    padding: 50px 125px;
+    background-color: #fff;
+}
+main h2 {
+    margin-bottom: 30px;
+}
+.main__box {
+    height: 430px;
+    width: 430px;
+    position: relative;
+}
+
+main .container{
+    margin: 0 auto;
+    width: 1300px;
+    display: grid;
+    grid-template-areas:
+        "men women"
+        "moti para";
+    row-gap: 70px;
+}
+
+.main__men p,
+.main__women p {
+    position: absolute;
+    bottom: 0;
+    right: 20px;
+    text-transform: uppercase;
+    font-family: tenon, lato, verdana, sans-serif;
+    font-size: 62px;
+    color: #fff;
+}
+
+.main__men{
+    grid-area: men;
+    background-image: url(../images/simon-migaj.jpg);
+    background-position: bottom;
+}
+
+.main__women{
+    grid-area: women;
+    background-image: url(../images/ali-kazal.jpg);
+    background-position-x: left;
+    background-position-y: bottom;
+    background-size: cover;
+}
+.main__motivation{
+    grid-area: moti;
+    background-image: url(../images/alireza-shojaei.jpg);
+    background-size: cover;
+    display: flex;
+    height: 430px;
+    flex-direction: column;
+    justify-content: space-around;
+    padding: 20px 50px;
+}
+.main__p{
+    grid-area: para;
+    background-color: #D4E0E2;
+    margin: auto 0;
+    height: 430px;
+    padding: 50px 50px;
+}
+
+.main__p p{
+    font-family: tenon, lato, verdana, sans-serif;
+    font-size: 35px;
+    font-weight: normal;
+    line-height: 150%;
+    margin: auto 0;
+}
+.main__motivation p {
+    font-family: tenon, lato, verdana, sans-serif;
+    font-size: 66px;
+    font-weight: 500;
+    color: #0a3641;
+    margin: 0;
+}
+
+/*Latest News*/
+#latest-homepage {
+    width: 1300px;
+    margin: 0 auto;
+    padding: 50px 125px 100px 125px;
+    background-color: #fff;
+}
+
+#latest-homepage h2{
+    padding: 50px 0;
+}
+
+#latest-homepage .container{
+    display: grid;
+    grid-template-areas:
+    "jyellow jred jgreen";
+    gap: 20px;
+}
+.jacket_yellow{
+    grid-area: jyellow;
+}
+.jacket_red{
+    grid-area: jred;
+}
+.jaket_green{
+    grid-area: jgreen;
+}
+.jacket {
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
+    display: grid;
+    grid-template-areas:
+    "jacket jacket jacket"
+    "jacket jacket jacket"
+    "jacket jacket jacket"
+    "name name name"
+    "description description description"
+    "stars 0 price" ; 
+    justify-content: center;
+}
+.jacket img{
+    grid-area: jacket;
+    padding-top: 20px;
+    justify-self: center;
+}
+.jacket h3 {
+    grid-area: name;
+    margin-bottom: 0;
+}
+.jacket p{
+    grid-area: description;
+    font-size: 18px;
+    font-weight: lighter;
+    color: #707070;
+    margin-top: 10px;
+}
+.jacket .stars {
+    grid-area: stars;
+    align-self: center;
+}
+.jacket .price{
+    grid-area: price;
+    color: #0A3641;
+    font-size: 35px;
+    font-weight: 500;
+    align-self: center;
+}
+#latest-homepage img{
+    height: 285px;
+}
+
+.stars i {
+    font-size: 15px;
+    color: #0A3641;
+}
+
+/*Footer*/
+footer {
+    width: 1300px;
+    margin: 50px auto 0 auto;
+    border-top: 2px solid #0A3641;
+    padding: 0 100px;
+    color: #0A3641;
+}
+footer a{ 
+    color: #707070;
+    font-size: 18px;
+}
+footer>section{
+    display: flex;
+    flex-direction: row;
+    width: 1300px;
+}
+footer>section>div{
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+.footer-current{
+    text-decoration: underline;
+}
+.copyright{
+    width: 1300px;
+    margin-top: 30px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    
+}
+
+.copyright p{
+    grid-column: 1/2;
+}
+
+.copyright h4{
+    grid-column: 2/4;
+}
+
+.social a{
+    color: #0A3641;
+    padding-right: 15px;
+}
