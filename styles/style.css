@@ -3,6 +3,8 @@
 
 * {
     box-sizing: border-box;
+    padding: 0;
+    margin: 0;
   }
 
 body{
@@ -54,14 +56,14 @@ p {
 header {
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
     height: 126px;
     width: 100%;
     margin-bottom: 10px;
     top: 0;
     position: fixed;
-    background-color: rgba(0, 0, 0, 0.2);
+    background-color: rgba(0, 0, 0, 0.35);
     backdrop-filter: blur(10px);
     z-index: 999;
 }
@@ -94,7 +96,7 @@ nav a{
     background-image: url(../images/kamil-kalbarczyk03.jpg);
     background-position: right;
     height: 80vh;
-    width: 100vw;
+/*     width: 100vw; */
     position: relative;
 }
 
@@ -121,13 +123,15 @@ nav a{
 
 /*Homepage Main*/
 main {
-    width: 1300px;
+    max-width: 1300px;
     margin: 0 auto;
-    padding: 50px 125px;
+    padding: 3em 2em;
     background-color: #fff;
+    align-content: center;
 }
-main h2 {
-    margin-bottom: 30px;
+main .container h2 {
+    margin-bottom: -25px;
+    grid-area: h2;
 }
 .main__box {
     height: 430px;
@@ -136,13 +140,15 @@ main h2 {
 }
 
 main .container{
+    justify-content: center;
     margin: 0 auto;
-    width: 1300px;
+    max-width: 1300px;
     display: grid;
     grid-template-areas:
+        "h2 h2"
         "men women"
         "moti para";
-    row-gap: 70px;
+    gap: 70px;
 }
 
 .main__men p,
@@ -160,6 +166,10 @@ main .container{
     grid-area: men;
     background-image: url(../images/simon-migaj.jpg);
     background-position: bottom;
+}
+
+.main__men:hover{
+
 }
 
 .main__women{
@@ -204,32 +214,31 @@ main .container{
 
 /*Latest News*/
 #latest-homepage {
-    width: 1300px;
+    max-width: 1300px;
     margin: 0 auto;
-    padding: 50px 125px 100px 125px;
     background-color: #fff;
 }
 
-#latest-homepage h2{
-    padding: 50px 0;
+#latest-homepage .container h2{
+    padding-top: 35px;
+    margin-bottom: -20px;
+    display: block;
+    grid-column; 1 / span 3;
 }
 
 #latest-homepage .container{
     display: grid;
-    grid-template-areas:
-    "jyellow jred jgreen";
-    gap: 20px;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 70px;
+    justify-content: center;
+    padding: 0 5em;
+    padding-bottom: 2.5em;
 }
 .jacket_yellow{
-    grid-area: jyellow;
-}
-.jacket_red{
-    grid-area: jred;
-}
-.jaket_green{
-    grid-area: jgreen;
+    grid-column: 1 / 2;
 }
 .jacket {
+    width: 330px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
     display: grid;
     grid-template-areas:
@@ -240,6 +249,7 @@ main .container{
     "description description description"
     "stars 0 price" ; 
     justify-content: center;
+    
 }
 .jacket img{
     grid-area: jacket;
@@ -279,7 +289,7 @@ main .container{
 
 /*Footer*/
 footer {
-    width: 1300px;
+    max-width: 1300px;
     margin: 50px auto 0 auto;
     border-top: 2px solid #0A3641;
     padding: 0 100px;
@@ -289,21 +299,25 @@ footer a{
     color: #707070;
     font-size: 18px;
 }
-footer>section{
+footer > section {
     display: flex;
     flex-direction: row;
-    width: 1300px;
+    max-width: 1300px;
+    margin: 0 auto;
+    justify-content: space-between;
 }
-footer>section>div{
+footer > section > div { 
     flex: 1;
     display: flex;
     flex-direction: column;
+    max-width: 150px;
+    margin: 20px auto;
 }
 .footer-current{
     text-decoration: underline;
 }
 .copyright{
-    width: 1300px;
+    max-width: 1300px;
     margin-top: 30px;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
@@ -322,3 +336,109 @@ footer>section>div{
     color: #0A3641;
     padding-right: 15px;
 }
+
+/* Diffrent screens */
+@media only screen and (max-width: 697px){
+    #latest-homepage .container{
+        grid-template-columns: 1fr;
+        grid-template-rows: 50px 1fr 1fr 1fr;
+        margin: 0 auto;
+        justify-content: center;
+    }
+
+    #latest-homepage {
+        margin: 0 auto;
+        max-width: 989px;
+        justify-content: center;
+    }
+    .jacket{
+        width: 330px;
+        justify-self: center;
+    }
+    main .container{
+        grid-template-areas:
+            "h2"
+            "men" 
+            "women";
+    }
+
+    .main__box{
+        width: 330px;
+        height: 330px;
+    }
+    
+    .main__men {
+        background-position-y: -350px;   
+    }
+    .main__motivation{
+        display: none;
+    }
+
+    .main__p{
+        display: none;
+    }
+}
+
+@media only screen and (min-width: 698px) and (max-width: 979px){
+    #latest-homepage .container{
+        grid-template-columns: 1fr;
+        grid-template-rows: 50px 1fr 1fr 1fr;
+        margin: 0 auto;
+        width: 100%;
+    }
+
+    .jacket {
+        width: 100%;
+        min-width: 300px;
+        grid-template-areas:
+        "jacket name"
+        "jacket description"
+        "jacket price"
+        "jacket stars";
+        justify-content: space-around;
+        padding-top: 1em;
+        padding-bottom: 1em;
+        margin: 0 auto;   
+    }
+
+    #latest-homepage {
+        margin: 0 auto;
+    }
+
+    main .container{
+        grid-template-areas:
+            "h2"
+            "men" 
+            "women"
+            "moti" 
+            "para";
+    }
+}
+@media only screen and (min-width: 980px) and (max-width: 1200px){
+    #latest-homepage .container{
+        grid-template-columns: 1fr;
+        grid-template-rows: 50px 1fr 1fr 1fr;
+        margin: 0 auto;
+        width: 100%;
+    }
+
+    .jacket {
+        width: 100%;
+        min-width: 300px;
+        grid-template-areas:
+        "jacket name"
+        "jacket description"
+        "jacket price"
+        "jacket stars";
+        justify-content: space-around;
+        padding-top: 1em;
+        padding-bottom: 1em;
+        margin: 0 auto;   
+    }
+
+    #latest-homepage {
+        margin: 0 auto;
+    }
+}
+
+
