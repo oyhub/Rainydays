@@ -14,7 +14,19 @@ body {
   font-size: 20px;
   font-weight: normal;
   background-color: #d4e0e2;
+  margin: 0 auto;
   position: relative;
+  color: #0a3641;
+}
+h1 {
+  font-size: 1.6em;
+  color: #fff;
+  text-transform: uppercase;
+}
+.hero__content p {
+  color: #fff;
+  text-transform: uppercase;
+  font-size: 0.8em;
 }
 a {
   text-decoration: none;
@@ -85,4 +97,46 @@ header {
 }
 .iconhamburger i {
   padding: 1em;
+}
+
+/* Hero */
+.hero {
+  height: 70vh;
+  background-image: url(../images/kamil-kalbarczyk03.jpg);
+  background-size: cover;
+  background-position: bottom right;
+  position: relative;
+}
+.hero__content {
+  position: absolute;
+  bottom: 10%;
+  width: 100%;
+  text-align: center;
+  background-color: rgba(0, 0, 0, 0.25);
+  padding: 15px 0 30px 0;
+}
+.hero__content p {
+  margin-bottom: 1.5em;
+}
+.hero__content a {
+  background-color: rgba(255, 255, 255, 0.25);
+  backdrop-filter: blur(10px);
+  padding: 10px 30px;
+  border: 2px solid #fff;
+  border-radius: 10px;
+}
+
+/* See our jackets */
+main h2 {
+  margin: 2em 0 0.7em 0;
+  text-align: center;
+}
+main {
+  width: 100%;
+}
+.main__box img {
+  width: 100%;
+}
+.main__box {
+  width: 90%;
 }
