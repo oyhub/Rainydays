@@ -13,7 +13,7 @@
     <!--Header and nav-->
     <header>
       <a href="index.html" class="logo"><img src="/images/RainyDays_Logo_white.png" alt="Logo" /></a>
-      <nav>
+      <nav class="menu">
         <ul>
           <li><a href="men.html">men</a></li>
           <li><a href="women.html">women</a></li>
@@ -26,6 +26,23 @@
         <li><i class="fas fa-user"></i></li>
         <li><i class="fas fa-shopping-cart"></i></li>
       </ul>
+      <!-- Hamburger Menu -->
+      <div class="hamburger-container">
+        <label for="hamburger-menu" class="hamburger-menu"><i class="fas fa-bars"></i></label>
+        <input type="checkbox" id="hamburger-menu" class="hamburger-menu">
+        <nav class="dropdownmenu">
+          <ul class="menuhamburger">
+            <li><a href="men.html">men</a></li>
+            <li><a href="women.html">women</a></li>
+            <li><a href="about.html">about</a></li>
+            <li><a href="contact.html">contact</a></li>
+          </ul>
+          <ul class="iconhamburger">
+            <li><i class="fas fa-search"></i></li>
+            <li><i class="fas fa-user"></i></li>
+            <li><i class="fas fa-shopping-cart"></i></li>
+        </nav>
+      </div>
     </header>
 
     <!--Hero Image-->
@@ -115,7 +132,7 @@
 
     <!--Footer-->
     <footer>
-      <section>
+      <section class="footer">
         <div>
           <h4>Jackets</h4>
           <a href="men.html">Men</a>
