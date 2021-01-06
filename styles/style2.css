@@ -1,60 +1,10 @@
+/*Global*/
+@import url("https://use.typekit.net/onj7zyw.css");
 
 * {
-    box-sizing: border-box;
-    padding: 0;
-    margin: 0;
-}
-
-a {
-    text-decoration: none;
-    color: #000;
-}
-
-ul li {
-    list-style: none;
-}
-
-/* Header */
-header {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-    height: 126px;
-    width: 100%;
-    margin-bottom: 10px;
-    top: 0;
-    position: fixed;
-    color: #fff;
-    background-color: rgba(0, 0, 0, 0.3);
-    backdrop-filter: blur(10px);
-    z-index: 999;
-    padding: 0 100px;
-}
-
-.logo {
-    height: 90%;
-    align-self: center;
-}
-
-.logo img {
-    height: inherit;
-}
-
-header nav li {
-    display: inline-block;
-    padding: 0 1.5em;
-    font-size: 2em;
-    color: #fff;
-}
-
-header .iconmenu li {
-    display: inline-block;
-    padding: 0 1em;
-    font-size: 2em;
-    color: #fff;
-}
-
-header a {
-    color: #fff;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
 }
