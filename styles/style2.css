@@ -71,6 +71,12 @@ ul {
   cursor: pointer;
   color: #d97904;
 }
+.cta,
+.main__men img,
+.main__women img,
+.jacket {
+  transition: 0.3s;
+}
 .cta:hover {
   background-color: #fff;
   color: #000;
