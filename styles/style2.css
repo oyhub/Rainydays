@@ -134,7 +134,7 @@ header {
   display: flex;
   flex-direction: column;
   position: fixed;
-  top: 126px;
+  top: 100px;
   right: 0;
   width: 100%;
   background-color: #000;
