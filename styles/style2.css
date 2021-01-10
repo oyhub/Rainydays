@@ -82,7 +82,8 @@ ul {
 .searchwrap a {
   transition: 0.3s;
 }
-.searchwrap a:hover {
+.searchwrap a:hover,
+#loginbtn:hover {
   border: 1px solid #d97904;
   background-color: #fff;
   color: #d97904;
