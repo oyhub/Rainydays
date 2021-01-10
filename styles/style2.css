@@ -67,15 +67,25 @@ ul {
   text-decoration: underline;
 }
 .iconmenu i:hover,
+.iconhamburger i:hover,
 .social i:hover {
   cursor: pointer;
   color: #d97904;
 }
+.searchwrap label:hover {
+  cursor: pointer;
+}
 .cta,
 .main__men img,
 .main__women img,
-.jacket {
+.jacket,
+.searchwrap a {
   transition: 0.3s;
+}
+.searchwrap a:hover {
+  border: 1px solid #d97904;
+  background-color: #fff;
+  color: #d97904;
 }
 .cta:hover {
   background-color: #fff;
@@ -102,6 +112,7 @@ footer a:hover {
 .footer-current {
   text-decoration: underline;
 }
+
 /* Header */
 header {
   display: flex;
