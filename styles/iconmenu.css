@@ -120,7 +120,7 @@
   margin: 20px 0 10px 0;
   font-size: 0.8em;
 }
-#userhelp {
+.userhelp {
   grid-column: 2/3;
   background: none;
   color: #0a3641;
