@@ -66,6 +66,9 @@ ul {
 .menu a:hover {
   text-decoration: underline;
 }
+.hamburger-menu:hover {
+  cursor: pointer;
+}
 .iconmenu i:hover,
 .iconhamburger i:hover,
 .social i:hover {
@@ -124,7 +127,7 @@ header {
   margin-bottom: 10px;
   top: 0;
   position: fixed;
-  background-color: rgba(0, 0, 0, 0.35);
+  background-color: rgba(0, 0, 0, 0.45);
   backdrop-filter: blur(10px);
   z-index: 999;
 }
@@ -132,12 +135,9 @@ header {
   height: 100px;
   padding-left: 20px;
 }
+#hamburger-menu,
 .menu,
-.iconmenu,
-.dropdownmenu {
-  display: none;
-}
-#hamburger-menu {
+.iconmenu {
   display: none;
 }
 .hamburger-menu {
@@ -145,10 +145,8 @@ header {
   font-size: 1.8em;
   color: #fff;
 }
-.hamburger-menu:hover {
-  cursor: pointer;
-}
-#hamburger-menu:checked ~ .dropdownmenu {
+#hamburger-menu:checked ~ .menu,
+#hamburger-menu:checked ~ .iconmenu {
   display: flex;
   flex-direction: column;
   position: fixed;
@@ -158,21 +156,19 @@ header {
   background-color: #000;
   z-index: 998;
   color: #fff;
-}
-.menuhamburger,
-.iconhamburger {
   text-align: center;
-  font-size: 1.3em;
 }
-.menuhamburger li {
-  padding-top: 0.4em;
-}
-.iconhamburger {
-  display: flex;
+#hamburger-menu:checked ~ .iconmenu {
+  top: 276px;
+  flex-direction: row;
   justify-content: center;
+  padding: 15px 0;
 }
-.iconhamburger i {
-  padding: 1em;
+.menu li {
+  padding: 8px 0;
+}
+.iconmenu i {
+  margin: 0 15px;
 }
 
 /* Hero */
@@ -320,7 +316,7 @@ footer {
   margin-top: 1em;
 }
 footer a {
-  color: #707070;
+  color: #5b5b5b;
   font-weight: lighter;
   text-transform: capitalize;
 }
@@ -435,16 +431,20 @@ footer div {
   }
 }
 @media only screen and (min-width: 1000px) {
-  .hamburger-container {
-    display: none;
-  }
   header {
     display: grid;
     grid-template-columns: 226px auto 500px auto 180px;
   }
-  .menu {
+  .hamburger-menu {
+    display: none;
+  }
+  .menu,
+  #hamburger-menu:checked ~ .menu {
     display: block;
+    top: auto;
     grid-column: 3/4;
+    background: none;
+    font-weight: 200;
   }
   .menu ul {
     width: 100%;
@@ -452,15 +452,15 @@ footer div {
     font-weight: 200;
     justify-content: space-around;
   }
-  .iconmenu li {
-    margin-right: 1.5em;
-  }
-  .iconmenu {
+  .iconmenu,
+  #hamburger-menu:checked ~ .iconmenu {
     grid-column: 5/6;
     display: flex;
     color: #fff;
     width: 226px;
     justify-content: flex-start;
+    top: auto;
+    background: none;
   }
   main .container {
     grid-template-columns: 1fr 1fr;

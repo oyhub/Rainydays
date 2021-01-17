@@ -2,7 +2,7 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <link rel="stylesheet" href="styles/style2.css">
+    <link rel="stylesheet" href="styles/style2.css" />
     <link rel="stylesheet" href="styles/iconmenu.css" />
     <link rel="stylesheet" href="https://use.typekit.net/onj7zyw.css" />
     <script src="https://kit.fontawesome.com/fa5b77eb46.js" crossorigin="anonymous"></script>
@@ -13,6 +13,8 @@
     <!--Header and nav-->
     <header>
       <a href="index.html" class="logo"><img src="/images/RainyDays_Logo_white.png" alt="Logo" /></a>
+      <label for="hamburger-menu" class="hamburger-menu"><i class="fas fa-bars"></i></label>
+      <input type="checkbox" id="hamburger-menu" class="hamburger-menu" />
       <nav class="menu">
         <ul>
           <li><a href="men.html">men</a></li>
@@ -22,27 +24,16 @@
         </ul>
       </nav>
       <ul class="iconmenu">
-        <li><label for="search"><i class="fas fa-search"></i></label></li>
-        <li><label for="login"><i class="fas fa-user"></i></label></li>
-        <li><label for="cart"><i class="fas fa-shopping-cart"></i></label></li>
+        <li>
+          <label for="search"><i class="fas fa-search"></i></label>
+        </li>
+        <li>
+          <label for="login"><i class="fas fa-user"></i></label>
+        </li>
+        <li>
+          <label for="cart"><i class="fas fa-shopping-cart"></i></label>
+        </li>
       </ul>
-      <!-- Hamburger Menu -->
-      <div class="hamburger-container">
-        <label for="hamburger-menu" class="hamburger-menu"><i class="fas fa-bars"></i></label>
-        <input type="checkbox" id="hamburger-menu" class="hamburger-menu">
-        <nav class="dropdownmenu">
-          <ul class="menuhamburger">
-            <li><a href="men.html">men</a></li>
-            <li><a href="women.html">women</a></li>
-            <li><a href="about.html">about</a></li>
-            <li><a href="contact.html">contact</a></li>
-          </ul>
-          <ul class="iconhamburger">
-            <li><label for="search"><i class="fas fa-search"></i></label></li>
-            <li><label for="login"><i class="fas fa-user"></i></label></li>
-            <li><label for="cart"><i class="fas fa-shopping-cart"></i></label></li>
-        </nav>
-      </div>
     </header>
 
     <!--Hero Image-->
@@ -53,7 +44,7 @@
         <a href="#target" class="cta">Latest arrivals</a>
       </div>
       <!-- Search field -->
-      <input type="checkbox" id="search">
+      <input type="checkbox" id="search" />
       <div class="searchbox">
         <div class="searchwrap">
           <label for="search">X</label>
@@ -61,12 +52,12 @@
             <i class="fas fa-search"></i>
             <p class="searchlabel">Search</p>
           </div>
-          <input type="text" class="searchfield" placeholder="Type here for search">
+          <input type="text" class="searchfield" placeholder="Type here for search" />
           <a href="#">Search</a>
         </div>
       </div>
       <!-- User Login -->
-      <input type="checkbox" id="login">
+      <input type="checkbox" id="login" />
       <div class="loginbox">
         <div class="loginwrap">
           <label for="login">X</label>
@@ -74,8 +65,8 @@
             <i class="fas fa-user"></i>
             <p class="loginlabel">Login</p>
           </div>
-          <input type="text" class="userfield" placeholder="Username">
-          <input type="password" class="passwordfield" placeholder="Password">
+          <input type="text" class="userfield" placeholder="Username" />
+          <input type="password" class="passwordfield" placeholder="Password" />
           <a href="#" id="loginbtn">Login</a>
           <a href="#" class="password" id="userhelp">Forgot password?</a>
           <span class="margin"><a href="#" class="account" id="userhelp">Create Account</a></span>
@@ -83,7 +74,7 @@
       </div>
 
       <!-- Cart -->
-      <input type="checkbox" id="cart">
+      <input type="checkbox" id="cart" />
       <div class="cartbox">
         <div class="cartwrap">
           <label for="cart">X</label>
@@ -101,11 +92,11 @@
       <div class="container">
         <h2>See our jackets</h2>
         <div class="main__box main__men">
-          <a href="men.html"><img src="images/simon-migaj.jpg" alt="Red jacket for men"></a>
+          <a href="men.html"><img src="images/simon-migaj.jpg" alt="Red jacket for men" /></a>
           <p>Men</p>
         </div>
         <div class="main__box main__women">
-          <a href="women.html"><img src="images/ali-kazal.jpg" alt="Red jacket for women"></a>
+          <a href="women.html"><img src="images/ali-kazal.jpg" alt="Red jacket for women" /></a>
           <p>women</p>
         </div>
         <div class="main__box main__motivation">
