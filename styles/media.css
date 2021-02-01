@@ -112,6 +112,10 @@
   .imagecontainer {
     margin: unset;
   }
+  /* Contact */
+  .formheading h2 {
+    padding-bottom: 0;
+  }
 }
 @media only screen and (min-width: 1000px) {
   header {
@@ -241,6 +245,34 @@
   .about_jackets p {
     grid-column: 3/4;
   }
+
+  /* Contact */
+  .contact_main {
+    display: grid;
+    grid-template-columns: 3fr 10% 2fr;
+    grid-template-rows: auto auto;
+    width: 80%;
+    margin: 0 auto;
+  }
+  .contactinfo {
+    grid-column: 3/4;
+    grid-row: 2/3;
+    width: 100%;
+    margin-top: 60px;
+  }
+  .contact_us {
+    width: 100%;
+  }
+  .contact {
+    grid-row: 2/3;
+    width: 100%;
+  }
+  .contact_main .imagecontainer {
+    display: block;
+    grid-column: 3/4;
+    align-self: start;
+    top: 122px;
+  }
 }
 @media only screen and (min-width: 1100px) {
   .main__p {
@@ -280,12 +312,22 @@
     margin-left: -15px;
   }
 }
+
+@media only screen and (min-width: 1159px) {
+  .contactinfo {
+    margin-top: 80px;
+  }
+}
+
 @media only screen and (min-width: 1248px) {
   .main__p {
     line-height: 3em;
   }
   .footer {
     justify-content: space-around;
+  }
+  .contactinfo {
+    margin-top: 100px;
   }
 }
 @media only screen and (min-width: 1300px) {
@@ -379,5 +421,16 @@
   }
   .jacket_4 {
     display: grid;
+  }
+
+  /* Contact */
+  .contactinfo {
+    margin-top: 120px;
+  }
+}
+
+@media only screen and (min-width: 1350px) {
+  .contactinfo {
+    margin-top: 140px;
   }
 }

@@ -78,6 +78,9 @@ ul {
   border-bottom: #0a3641 1px solid;
   padding-bottom: 8px;
 }
+.underline_nopadding {
+  border-bottom: #0a3641 1px solid;
+}
 
 /* Header */
 header {
@@ -275,10 +278,12 @@ footer div {
   transition: 0.3s;
 }
 .searchwrap a:hover,
-#loginbtn:hover {
-  border: 1px solid #d97904;
+#loginbtn:hover,
+input[type="submit"]:hover {
+  outline: 1px solid #d97904;
   background-color: #fff;
   color: #d97904;
+  cursor: pointer;
 }
 .cta:hover {
   background-color: #fff;

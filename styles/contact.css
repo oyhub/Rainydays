@@ -20,7 +20,8 @@ main {
   background-color: #fff;
   position: relative;
 }
-main section {
+main section,
+main .contact_bottom {
   width: 80%;
   margin: 0 auto;
 }
@@ -55,6 +56,48 @@ main section {
   width: 100%;
 }
 
+/* Contact Form */
+.formheading {
+  display: flex;
+  align-items: baseline;
+  flex-wrap: wrap;
+}
+.formheading h2 {
+  padding-right: 10px;
+}
+.formheading p {
+  font-size: 0.8em;
+  padding-bottom: 5px;
+}
+.contact label {
+  font-size: 0.8em;
+}
+input[type="text"],
+input[type="email"] {
+  display: block;
+  border: #0a3641 1px solid;
+  border-radius: 5px;
+  width: 100%;
+  padding: 3px;
+}
+#message {
+  width: 100%;
+  min-height: 130px;
+  border: #0a3641 1px solid;
+  border-radius: 5px;
+}
+input[type="submit"] {
+  color: #fff;
+  width: 100%;
+  margin: 10px 0 50px;
+  border: none;
+}
+input[type="text"]:focus,
+input[type="email"]:focus,
+#message:focus {
+  outline: none;
+  border: #d97904 1px solid;
+}
 /* Contactinfo */
 .contactinfo {
   font-family: "tenont", verdana, sans-serif;

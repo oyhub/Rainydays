@@ -89,40 +89,72 @@
 
     <!--Main Page-->
     <main>
-      <div class="whereonsite">
-        <p><a href="index.html">Home</a></p>
-        <p>/</p>
-        <p><a href="contact.html">contact</a></p>
-      </div>
-      <section>
-        <h1>Contact Us</h1>
-        <p>
-          Some information about how to get in contact, and how fast people will gett answer. Maybe link or some FAQ,
-          fell free to find out what should be here. Some information about how to get in contact, and how fast people
-          will gett answer. Maybe link or some FAQ, fell free to find out what should be here.
-        </p>
-        <h2>Contact Form</h2>
+      <div class="contact_main">
+        <div class="whereonsite">
+          <p><a href="index.html">Home</a></p>
+          <p>/</p>
+          <p><a href="contact.html">contact</a></p>
+        </div>
+
+        <section class="contact_us">
+          <div>
+            <h1>Contact Us</h1>
+            <p>
+              Some information about how to get in contact, and how fast people will gett answer. Maybe link or some
+              FAQ, fell free to find out what should be here. Some information about how to get in contact, and how fast
+              people will gett answer. Maybe link or some FAQ, fell free to find out what should be here.
+            </p>
+          </div>
+        </section>
+
         <!--Contact form here-->
-        <p>Contact form here</p>
-      </section>
-      <section class="contactinfo">
-        <div class="imagecontainer">
-          <img src="images/kamil-kalbarczyk02.jpg" alt="Foggy River" />
+        <section class="contact">
+          <div class="formheading">
+            <h2>Contact Form</h2>
+            <p class="orange-text">*Must be filed out</p>
+          </div>
+          <form method="post">
+            <label for="name">Name:<span class="orange-text">*</span></label>
+            <input type="text" name="name" id="name" required />
+
+            <label for="email">E-Mail:<span class="orange-text">*</span></label>
+            <input type="email" name="email" id="email" required />
+
+            <label for="order">Order number:</label>
+            <input type="text" name="order" id="order" />
+
+            <label for="topic">Topic:<span class="orange-text">*</span></label>
+            <input type="text" name="topic" id="topic" required />
+
+            <label for="message">Message:<span class="orange-text">*</span></label>
+            <textarea name="message" id="message" required></textarea>
+
+            <input type="submit" value="Send Message" class="orangebtn" />
+          </form>
+        </section>
+
+        <div class="imagecontainer kamil">
+          <img src="images/kamil-kalbarczyk02.jpg" alt="Green misty forest with waterside" />
         </div>
-        <p>Phone line is open between <span class="nowrap">09:00 - 15:00</span></p>
-        <div class="phone-email-adress">
-          <i class="fas fa-phone"></i>
-          <p>+99 999 - 555 - 999</p>
-        </div>
-        <div class="phone-email-adress">
-          <i class="fas fa-at"></i>
-          <p>Email@rainydays.web</p>
-        </div>
-        <div class="phone-email-adress">
-          <i class="fas fa-globe-europe"></i>
-          <p>North Pole 1, 2412 Arctic</p>
-        </div>
-      </section>
+
+        <section class="contactinfo">
+          <div>
+            <p>Phone line is open between <span class="nowrap">09:00 - 15:00</span></p>
+            <div class="phone-email-adress">
+              <i class="fas fa-phone"></i>
+              <p>+99 999 - 555 - 999</p>
+            </div>
+            <div class="phone-email-adress">
+              <i class="fas fa-at"></i>
+              <p>Email@rainydays.web</p>
+            </div>
+            <div class="phone-email-adress">
+              <i class="fas fa-globe-europe"></i>
+              <p>North Pole 1, 2412 Arctic</p>
+            </div>
+          </div>
+        </section>
+      </div>
     </main>
     <!--Footer-->
     <footer>
