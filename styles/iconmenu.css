@@ -1,4 +1,7 @@
 /* Search field */
+p {
+  padding-bottom: 0;
+}
 #search,
 .searchbox {
   display: none;
