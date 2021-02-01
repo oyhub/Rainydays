@@ -1,0 +1,70 @@
+/* Hero */
+.hero {
+  background-image: url(../images/mats-hagwall.jpg);
+}
+#women {
+  background-image: url(../images/adrian-infernus.jpg);
+}
+
+/* Main */
+main {
+  width: 100%;
+  padding-bottom: 2em;
+  background-color: #fff;
+  position: relative;
+}
+.whereonsite {
+  display: flex;
+  font-size: 0.6em;
+  position: absolute;
+  top: 10px;
+  left: 10px;
+}
+.whereonsite a {
+  color: #0a3641;
+  padding: 0 5px;
+}
+.latest {
+  display: none;
+}
+
+/* Latest Arrivals */
+.latest .container {
+  margin-top: 2em;
+}
+
+/* Jackets */
+h1 {
+  color: #0a3641;
+  text-align: center;
+  padding-top: 2em;
+}
+.headfilter {
+  width: 80%;
+  margin: 0 auto;
+}
+#sort {
+  width: 120px;
+  padding: 2px;
+  border: #0a3641 1px solid;
+}
+.sortby label {
+  padding-right: 10px;
+}
+.filtericon * {
+  display: inline-block;
+  padding-right: 10px;
+}
+.filter {
+  display: flex;
+  font-size: 0.8em;
+  justify-content: space-between;
+  padding: 20px 0;
+}
+.listofjackets {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: repeat(12 1fr);
+  gap: 15px;
+  justify-items: center;
+}

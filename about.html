@@ -1,92 +1,156 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
   <head>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="https://use.typekit.net/onj7zyw.css" />
+    <link rel="stylesheet" href="styles/style.css" />
+    <link rel="stylesheet" href="styles/about.css" />
+    <link rel="stylesheet" href="styles/iconmenu.css" />
+    <link rel="stylesheet" href="styles/media.css" />
+    <script src="https://kit.fontawesome.com/fa5b77eb46.js" crossorigin="anonymous"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Rainydays | About</title>
   </head>
   <body>
-    <!-- Menu and Hero Image-->
+    <!--Header and nav-->
     <header>
-      <nav>
-        <img src="images/RainyDays_Logo_white.png" alt="logo">
+      <a href="index.html" class="logo"><img src="/images/RainyDays_Logo_white.png" alt="Logo" /></a>
+      <label for="hamburger-menu" class="hamburger-menu"><i class="fas fa-bars"></i></label>
+      <input type="checkbox" id="hamburger-menu" class="hamburger-menu" />
+      <nav class="menu">
         <ul>
-          <li><a href="men.html">Men</a></li>
-          <li><a href="women.html">Women</a></li>
-          <li><a href="about.html">About</a></li>
-          <li><a href="contact.html">Contact</a></li>
+          <li><a href="men.html">men</a></li>
+          <li><a href="women.html">women</a></li>
+          <li><a href="about.html" class="current">about</a></li>
+          <li><a href="contact.html">contact</a></li>
         </ul>
-        <img src="" alt="search">
-        <img src="" alt="user">
-        <img src="" alt="cart">
       </nav>
-      <section>
-        <!--Hero Image as background-->
-        <p>Phusing the comfort zone</p>
-      </section>
+      <ul class="iconmenu">
+        <li>
+          <label for="search"><i class="fas fa-search"></i></label>
+        </li>
+        <li>
+          <label for="login"><i class="fas fa-user"></i></label>
+        </li>
+        <li>
+          <label for="cart"><i class="fas fa-shopping-cart"></i></label>
+        </li>
+      </ul>
     </header>
+
+    <!--Hero Image-->
+    <section class="hero" id="about">
+      <div class="hero__content">
+        <p>Find the right jacket for your next adventure</p>
+      </div>
+      <!-- Search field -->
+      <input type="checkbox" id="search" />
+      <div class="searchbox">
+        <div class="searchwrap">
+          <label for="search">X</label>
+          <div>
+            <i class="fas fa-search"></i>
+            <p class="searchlabel">Search</p>
+          </div>
+          <input type="text" class="searchfield" placeholder="Type here for search" />
+          <a href="#">Search</a>
+        </div>
+      </div>
+      <!-- User Login -->
+      <input type="checkbox" id="login" />
+      <div class="loginbox">
+        <div class="loginwrap">
+          <label for="login">X</label>
+          <div>
+            <i class="fas fa-user"></i>
+            <p class="loginlabel">Login</p>
+          </div>
+          <input type="text" class="userfield" placeholder="Username" />
+          <input type="password" class="passwordfield" placeholder="Password" />
+          <a href="#" id="loginbtn">Login</a>
+          <a href="#" class="password" id="userhelppw">Forgot password?</a>
+          <span class="margin"><a href="#" class="account" id="userhelpac">Create Account</a></span>
+        </div>
+      </div>
+
+      <!-- Cart -->
+      <input type="checkbox" id="cart" />
+      <div class="cartbox">
+        <div class="cartwrap">
+          <label for="cart">X</label>
+          <div>
+            <i class="fas fa-shopping-cart"></i>
+            <p class="cartlabel">Shoppingcart</p>
+          </div>
+          <p id="empty">Shopping cart is empty</p>
+        </div>
+      </div>
+    </section>
+
     <!--Main Page-->
     <main>
-        <div>
-            <p><a href="index.html">Home</a></p>
-            <p>/</p> 
-            <p><a href="about.html">About</a></p>  
+      <div class="whereonsite">
+        <p><a href="index.html">Home</a></p>
+        <p>/</p>
+        <p><a href="about.html">about</a></p>
+      </div>
+      <section class="about_weare">
+        <h1>Who we are</h1>
+        <p>
+          We love creating new jackets for all your adventures. All of the images on this site is from various free
+          stock sites. The images used are from (not in any order): Adrian Infernus, Ali Kazal, Alireza Shojaei, Kamil
+          Kalbarczyk, Mats Hagwall, Simon Migaj, a user called StockSnap, Will Swann and Matt Hardy. We love creating
+          new jackets for all your adventures.
+        </p>
+        <div class="imagecontainer will-swann">
+          <img src="images/will-swann.jpg" alt="Blue Jacket" />
         </div>
-        <section>
-            <h1>Who we are</h1>            
-            <div>
-                We love creating new jackets for all your adventures. 
-                All of the images on this site is from various free stock sites. The images used are from (not in any order): Adrian Infernus, Ali Kazal, Alireza Shojaei, Kamil Kalbarczyk, Mats Hagwall, Simon Migaj, a user called StockSnap, Will Swann and Matt Hardy. We love creating new jackets for all your adventures. 
-                All of the images on this site is from various free stock sites. The images used are from (not in any order): Adrian Infernus, Ali Kazal, Alireza Shojaei, Kamil Kalbarczyk, Mats Hagwall, Simon Migaj, a user called StockSnap, Will Swann and Matt Hardy. 
-                We love creating new jackets for all your adventures. 
-                All of the images on this site is from various free stock sites. The images used are from (not in any order): Adrian Infernus, Ali Kazal, Alireza Shojaei, Kamil Kalbarczyk, Mats Hagwall, Simon Migaj, a user called StockSnap, Will Swann and Matt Hardy. 
-            </div>
-            <img src="images/will-swann.jpg" alt="Blue Jacket">
-        </section> 
-        <section>
-            <h1>Our Jackets</h1>
-            <img src="images/matt-hardy.jpg" alt="Yellow Jacket">
-            <div>
-                Our jackets are designed by Windbreaker Vectors by Vecteezy, vecteezy.com/free-vector/windbreaker.  They required attribution, so i guessed I could use it for fill text on this about page. Our jackets are designed by Windbreaker Vectors by Vecteezy, vecteezy.com/free-vector/windbreaker.  
-                They required attribution, so i guessed I could use it for fill text on this about page. Our jackets are designed by Windbreaker Vectors by Vecteezy, vecteezy.com/free-vector/windbreaker.  They required attribution, so i guessed I could use it for fill text on this about page. 
-                Our jackets are designed by Windbreaker Vectors by Vecteezy, vecteezy.com/free-vector/windbreaker.  They required attribution, so i guessed I could use it for fill text on this about page.  
-            </div>
-        </section>         
-               
+      </section>
+      <section class="about_jackets">
+        <h2>Our Jackets</h2>
+        <div class="imagecontainer matt-hardy">
+          <img src="images/matt-hardy.jpg" alt="Yellow Jacket" />
+        </div>
+        <p>
+          Our jackets are designed by Windbreaker Vectors by Vecteezy, vecteezy.com/free-vector/windbreaker. They
+          required attribution, so i guessed I could use it for fill text on this about page. Our jackets are designed
+          by Windbreaker Vectors by Vecteezy, vecteezy.com/free-vector/windbreaker. They required attribution, so i
+          guessed I could use it for fill text on this about page.
+        </p>
+      </section>
     </main>
     <!--Footer-->
     <footer>
-      <div>
-        <p>Jackets</p>
-        <ul>
-          <li><a href="men.html">Men</a></li>
-          <li><a href="women.html">Women</a></li>
-        </ul>
-      </div>
-      <div>
-        <p>Rainydays</p>
-        <ul>
-          <li><a href="index.html">Home</a></li>
-          <li><a href="contact.html">Contact</a></li>
-          <li><a href="about.html">About</a></li>
-        </ul>
-      </div>
-      <div>
-        <p>Account</p>
-        <ul>
-          <li>Login</li>
-          <li>Create Account</li>
-        </ul>
-      </div>
-      <div>
-        <p>Social</p>
-        <img src="" alt="Facebook">
-        <img src="" alt="Instagram">
-        <img src="" alt="Twitter">
-      </div>
-      <div>
-        <p>© 2020, Rainydays</p>
-        <p>PHUSING THE COMFORT ZONE</p>
-      </div>
-      
+      <section class="footer">
+        <div>
+          <h4>Jackets</h4>
+          <a href="men.html">Men</a>
+          <a href="women.html">Women</a>
+        </div>
+        <div>
+          <h4>Rainydays</h4>
+          <a href="index.html">Home</a>
+          <a href="contact.html">Contact</a>
+          <a href="about.html" class="footer-current">About</a>
+        </div>
+        <div>
+          <h4>Account</h4>
+          <a href="#">Login</a>
+          <a href="#">Create Account</a>
+        </div>
+        <div>
+          <h4>Social</h4>
+          <div class="social">
+            <a href="#"><i class="fab fa-facebook"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+          </div>
+        </div>
+      </section>
+      <section class="copyright">
+        <p>&copy; 2021, Rainydays</p>
+        <h4>Pushing the comfort zone</h4>
+      </section>
     </footer>
   </body>
 </html>

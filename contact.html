@@ -1,93 +1,161 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
   <head>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="https://use.typekit.net/onj7zyw.css" />
+    <link rel="stylesheet" href="styles/style.css" />
+    <link rel="stylesheet" href="styles/contact.css" />
+    <link rel="stylesheet" href="styles/iconmenu.css" />
+    <link rel="stylesheet" href="styles/media.css" />
+    <script src="https://kit.fontawesome.com/fa5b77eb46.js" crossorigin="anonymous"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Rainydays | Contact</title>
   </head>
   <body>
-    <!-- Menu and Hero Image-->
+    <!--Header and nav-->
     <header>
-      <nav>
-        <img src="images/RainyDays_Logo_white.png" alt="logo">
+      <a href="index.html" class="logo"><img src="/images/RainyDays_Logo_white.png" alt="Logo" /></a>
+      <label for="hamburger-menu" class="hamburger-menu"><i class="fas fa-bars"></i></label>
+      <input type="checkbox" id="hamburger-menu" class="hamburger-menu" />
+      <nav class="menu">
         <ul>
-          <li><a href="men.html">Men</a></li>
-          <li><a href="women.html">Women</a></li>
-          <li><a href="about.html">About</a></li>
-          <li><a href="contact.html">Contact</a></li>
+          <li><a href="men.html">men</a></li>
+          <li><a href="women.html">women</a></li>
+          <li><a href="about.html">about</a></li>
+          <li><a href="contact.html" class="current">contact</a></li>
         </ul>
-        <img src="" alt="search">
-        <img src="" alt="user">
-        <img src="" alt="cart">
       </nav>
-      <section>
-        <!--Hero Image as background-->
-        <p>Please contact us if you have any questions</p>
-      </section>
+      <ul class="iconmenu">
+        <li>
+          <label for="search"><i class="fas fa-search"></i></label>
+        </li>
+        <li>
+          <label for="login"><i class="fas fa-user"></i></label>
+        </li>
+        <li>
+          <label for="cart"><i class="fas fa-shopping-cart"></i></label>
+        </li>
+      </ul>
     </header>
+
+    <!--Hero Image-->
+    <section class="hero" id="contact">
+      <div class="hero__content">
+        <p>Please contact us if you have any questions</p>
+      </div>
+      <!-- Search field -->
+      <input type="checkbox" id="search" />
+      <div class="searchbox">
+        <div class="searchwrap">
+          <label for="search">X</label>
+          <div>
+            <i class="fas fa-search"></i>
+            <p class="searchlabel">Search</p>
+          </div>
+          <input type="text" class="searchfield" placeholder="Type here for search" />
+          <a href="#">Search</a>
+        </div>
+      </div>
+      <!-- User Login -->
+      <input type="checkbox" id="login" />
+      <div class="loginbox">
+        <div class="loginwrap">
+          <label for="login">X</label>
+          <div>
+            <i class="fas fa-user"></i>
+            <p class="loginlabel">Login</p>
+          </div>
+          <input type="text" class="userfield" placeholder="Username" />
+          <input type="password" class="passwordfield" placeholder="Password" />
+          <a href="#" id="loginbtn">Login</a>
+          <a href="#" class="password" id="userhelppw">Forgot password?</a>
+          <span class="margin"><a href="#" class="account" id="userhelpac">Create Account</a></span>
+        </div>
+      </div>
+
+      <!-- Cart -->
+      <input type="checkbox" id="cart" />
+      <div class="cartbox">
+        <div class="cartwrap">
+          <label for="cart">X</label>
+          <div>
+            <i class="fas fa-shopping-cart"></i>
+            <p class="cartlabel">Shoppingcart</p>
+          </div>
+          <p id="empty">Shopping cart is empty</p>
+        </div>
+      </div>
+    </section>
+
     <!--Main Page-->
     <main>
-        <div>
-            <p><a href="index.html">Home</a></p>
-            <p>/</p> 
-            <p><a href="contact.html">Contact Us</a></p>  
+      <div class="whereonsite">
+        <p><a href="index.html">Home</a></p>
+        <p>/</p>
+        <p><a href="contact.html">contact</a></p>
+      </div>
+      <section>
+        <h1>Contact Us</h1>
+        <p>
+          Some information about how to get in contact, and how fast people will gett answer. Maybe link or some FAQ,
+          fell free to find out what should be here. Some information about how to get in contact, and how fast people
+          will gett answer. Maybe link or some FAQ, fell free to find out what should be here.
+        </p>
+        <h2>Contact Form</h2>
+        <!--Contact form here-->
+        <p>Contact form here</p>
+      </section>
+      <section class="contactinfo">
+        <div class="imagecontainer">
+          <img src="images/kamil-kalbarczyk02.jpg" alt="Foggy River" />
         </div>
-        <section>
-            <h1>Contact Us</h1>
-            <div>
-                Some information about how to get in contact, and how fast  people will gett answer. Maybe link or some FAQ, fell free to find out what should be here. 
-                Some information about how to get in contact, and how fast  people will gett answer. Maybe link or some FAQ, fell free to find out what should be here. 
-                Some information about how to get in contact, and how fast  people will gett answer. Maybe link or some FAQ, fell free to find out what should be here. 
-            </div>
-            <h2>Contact Form</h2>
-            <!--Contact form here-->
-            <p>Contact form here</p>
-        </section>
-        <section>
-            <img src="images/kamil-kalbarczyk02.jpg" alt="Foggy River">
-            <p>Phone line is open between 09:00 - 15:00</p>
-            <img src="" alt="Phone">
-            <p>+99 999 - 555 - 999</p>
-            <img src="" alt="@">
-            <p>Email@rainydays.web</p>
-            <img src="" alt="Globe">
-            <p>North Pole 1, 2412 Arctic</p>
-        </section>
-               
+        <p>Phone line is open between <span class="nowrap">09:00 - 15:00</span></p>
+        <div class="phone-email-adress">
+          <i class="fas fa-phone"></i>
+          <p>+99 999 - 555 - 999</p>
+        </div>
+        <div class="phone-email-adress">
+          <i class="fas fa-at"></i>
+          <p>Email@rainydays.web</p>
+        </div>
+        <div class="phone-email-adress">
+          <i class="fas fa-globe-europe"></i>
+          <p>North Pole 1, 2412 Arctic</p>
+        </div>
+      </section>
     </main>
     <!--Footer-->
     <footer>
-      <div>
-        <p>Jackets</p>
-        <ul>
-          <li><a href="men.html">Men</a></li>
-          <li><a href="women.html">Women</a></li>
-        </ul>
-      </div>
-      <div>
-        <p>Rainydays</p>
-        <ul>
-          <li><a href="index.html">Home</a></li>
-          <li><a href="contact.html">Contact</a></li>
-          <li><a href="about.html">About</a></li>
-        </ul>
-      </div>
-      <div>
-        <p>Account</p>
-        <ul>
-          <li>Login</li>
-          <li>Create Account</li>
-        </ul>
-      </div>
-      <div>
-        <p>Social</p>
-        <img src="" alt="Facebook">
-        <img src="" alt="Instagram">
-        <img src="" alt="Twitter">
-      </div>
-      <div>
-        <p>© 2020, Rainydays</p>
-        <p>PHUSING THE COMFORT ZONE</p>
-      </div>
-      
+      <section class="footer">
+        <div>
+          <h4>Jackets</h4>
+          <a href="men.html">Men</a>
+          <a href="women.html">Women</a>
+        </div>
+        <div>
+          <h4>Rainydays</h4>
+          <a href="index.html">Home</a>
+          <a href="contact.html" class="footer-current">Contact</a>
+          <a href="about.html">About</a>
+        </div>
+        <div>
+          <h4>Account</h4>
+          <a href="#">Login</a>
+          <a href="#">Create Account</a>
+        </div>
+        <div>
+          <h4>Social</h4>
+          <div class="social">
+            <a href="#"><i class="fab fa-facebook"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+          </div>
+        </div>
+      </section>
+      <section class="copyright">
+        <p>&copy; 2021, Rainydays</p>
+        <h4>Pushing the comfort zone</h4>
+      </section>
     </footer>
   </body>
 </html>

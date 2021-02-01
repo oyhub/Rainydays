@@ -1,0 +1,84 @@
+/* Hero */
+.hero {
+  background-image: url(../images/kamil-kalbarczyk03.jpg);
+  background-position: bottom right;
+}
+.hero__home {
+  position: absolute;
+  bottom: 10%;
+  width: 100%;
+  text-align: center;
+  background-color: rgba(0, 0, 0, 0.2);
+  padding: 15px 0 30px 0;
+}
+.hero__home p {
+  margin-bottom: 1.5em;
+}
+.hero__home a {
+  background-color: rgba(255, 255, 255, 0.25);
+  backdrop-filter: blur(10px);
+  padding: 10px 30px;
+  border: 2px solid #fff;
+  border-radius: 10px;
+}
+h1 {
+  color: #fff;
+}
+
+/* See our jackets */
+main {
+  width: 100%;
+  padding-bottom: 2em;
+  background-color: #fff;
+}
+main .container {
+  grid-template-rows: auto 1fr 1fr;
+  position: relative;
+}
+main h2 {
+  margin: 1.5em 0 0.7em 0;
+  text-align: center;
+  margin-bottom: -0.5em;
+}
+.main__box img {
+  width: 100%;
+  z-index: 900;
+  border: #d97904 3px solid;
+}
+.main__box {
+  width: 80%;
+  height: auto;
+  position: relative;
+  overflow: hidden;
+  max-height: 430px;
+  max-width: 430px;
+}
+.main__men p,
+.main__women p {
+  text-transform: uppercase;
+  position: absolute;
+  bottom: 5%;
+  right: 5%;
+  z-index: 950;
+  color: #d97904;
+  font-family: Tenon, verdana, sans-serif;
+  font-size: 3em;
+}
+.main__p,
+.main__motivation {
+  display: none;
+}
+
+/* Latest */
+#latest-homepage {
+  width: 100%;
+  background-color: #fff;
+  padding-bottom: 3em;
+}
+#latest-homepage .container {
+  grid-template-rows: auto 1fr 1fr 1fr;
+  grid-template-columns: 1fr;
+}
+#latest-homepage h2 {
+  text-align: center;
+}

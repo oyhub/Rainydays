@@ -1,0 +1,72 @@
+p {
+  padding-bottom: 2em;
+}
+h1 {
+  padding: 2em 0 0.4em;
+}
+/* Hero */
+#contact {
+  background-image: url(../images/kamil-kalbarczyk01.jpg);
+  background-position-y: center;
+}
+.hero__content p {
+  color: #000;
+}
+
+/* Main */
+main {
+  width: 100%;
+  padding-bottom: 2em;
+  background-color: #fff;
+  position: relative;
+}
+main section {
+  width: 80%;
+  margin: 0 auto;
+}
+.whereonsite {
+  display: flex;
+  font-size: 0.6em;
+  position: absolute;
+  top: 10px;
+  left: 10px;
+}
+.whereonsite a {
+  color: #0a3641;
+  padding: 0 5px;
+}
+.imagecontainer {
+  max-width: 350px;
+  max-height: 350px;
+  width: 100%;
+  position: relative;
+  overflow: hidden;
+  margin: 0 auto;
+  display: none;
+}
+.imagecontainer:after {
+  content: "";
+  display: block;
+  padding-bottom: 100%;
+}
+.imagecontainer img {
+  position: absolute;
+  width: 100%;
+  width: 100%;
+}
+
+/* Contactinfo */
+.contactinfo {
+  font-family: "tenont", verdana, sans-serif;
+  font-weight: 600;
+  font-size: 0.7em;
+}
+.phone-email-adress * {
+  display: inline-block;
+}
+.phone-email-adress i {
+  margin-right: 10px;
+}
+.nowrap {
+  white-space: nowrap;
+}

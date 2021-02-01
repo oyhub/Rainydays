@@ -1,126 +1,296 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
   <head>
-    <title>Rainydays | Women | Yellow Hike</title>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="https://use.typekit.net/onj7zyw.css" />
+    <link rel="stylesheet" href="styles/style.css" />
+    <link rel="stylesheet" href="styles/product.css" />
+    <link rel="stylesheet" href="styles/iconmenu.css" />
+    <link rel="stylesheet" href="styles/media.css" />
+    <script src="https://kit.fontawesome.com/fa5b77eb46.js" crossorigin="anonymous"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Rainydays | Women | Yellow Hike Women</title>
   </head>
   <body>
-    <!-- Menu and Hero Image-->
+    <!--Header and nav-->
     <header>
-      <nav>
-        <img src="images/RainyDays_Logo_white.png" alt="logo">
+      <a href="index.html" class="logo"><img src="/images/RainyDays_Logo_white.png" alt="Logo" /></a>
+      <label for="hamburger-menu" class="hamburger-menu"><i class="fas fa-bars"></i></label>
+      <input type="checkbox" id="hamburger-menu" class="hamburger-menu" />
+      <nav class="menu">
         <ul>
-          <li><a href="men.html">Men</a></li>
-          <li><a href="women.html">Women</a></li>
-          <li><a href="about.html">About</a></li>
-          <li><a href="contact.html">Contact</a></li>
+          <li><a href="men.html">men</a></li>
+          <li><a href="women.html">women</a></li>
+          <li><a href="about.html">about</a></li>
+          <li><a href="contact.html">contact</a></li>
         </ul>
-        <img src="" alt="search">
-        <img src="" alt="user">
-        <img src="" alt="cart">
       </nav>
+      <ul class="iconmenu">
+        <li>
+          <label for="search"><i class="fas fa-search"></i></label>
+        </li>
+        <li>
+          <label for="login"><i class="fas fa-user"></i></label>
+        </li>
+        <li>
+          <label for="cart"><i class="fas fa-shopping-cart"></i></label>
+        </li>
+      </ul>
     </header>
-    <!--Main Page-->
-    <main>
-      <div>
-        <p><a href="index.html">Home</a></p>
-        <p>/</p> 
-        <p><a href="women.html">Women</a></p>  
-        <p>/</p>
-        <p><a href="Yellow-hike-women.html">Yellow Hike</a></p>
+    <section>
+      <!-- Search field -->
+      <input type="checkbox" id="search" />
+      <div class="searchbox">
+        <div class="searchwrap">
+          <label for="search">X</label>
+          <div>
+            <i class="fas fa-search"></i>
+            <p class="searchlabel">Search</p>
+          </div>
+          <input type="text" class="searchfield" placeholder="Type here for search" />
+          <a href="#">Search</a>
+        </div>
       </div>
-      <section>
+      <!-- User Login -->
+      <input type="checkbox" id="login" />
+      <div class="loginbox">
+        <div class="loginwrap">
+          <label for="login">X</label>
           <div>
-              <img src="images/vectors/01.png" alt="Yellow Hike Jacket">
-              <img src="" alt="Yellow Hike Jacket">
-              <img src="" alt="Yellow Hike Jacket">
-              <img src="" alt="Yellow Hike Jacket">
-              <img src="" alt="Yellow Hike Jacket">
+            <i class="fas fa-user"></i>
+            <p class="loginlabel">Login</p>
+          </div>
+          <input type="text" class="userfield" placeholder="Username" />
+          <input type="password" class="passwordfield" placeholder="Password" />
+          <a href="#" id="loginbtn">Login</a>
+          <a href="#" class="password" id="userhelppw">Forgot password?</a>
+          <span class="margin"><a href="#" class="account" id="userhelpac">Create Account</a></span>
+        </div>
+      </div>
+
+      <!-- Cart -->
+      <input type="checkbox" id="cart" />
+      <div class="cartbox">
+        <div class="cartwrap">
+          <label for="cart">X</label>
+          <div>
+            <i class="fas fa-shopping-cart"></i>
+            <p class="cartlabel">Shoppingcart</p>
+          </div>
+          <p id="empty">Shopping cart is empty</p>
+        </div>
+      </div>
+    </section>
+    <!--Main Page-->
+    <main class="productmain">
+      <div class="whereonsite">
+        <p><a href="index.html">Home</a></p>
+        <p>/</p>
+        <p><a href="men.html">women</a></p>
+        <p>/</p>
+        <p><a href="Yellow-Hike-Women.html">Yellow hike women</a></p>
+      </div>
+      <section class="jacketspecific">
+        <div class="specificimages">
+          <img src="images/vectors/01.png" alt="Yellow Hike Jacket" class="bigimg" />
+          <div class="thumbs">
+            <img src="images/vectors/01.png" alt="Yellow Hike Jacket" class="smallimg" />
+            <img src="images/vectors/01.png" alt="Yellow Hike Jacket" class="smallimg" />
+            <img src="images/vectors/01.png" alt="Yellow Hike Jacket" class="smallimg" />
+            <img src="images/vectors/01.png" alt="Yellow Hike Jacket" class="smallimg" />
+          </div>
+        </div>
+        <div class="jacketinfo">
+          <h1>Yellow Hike</h1>
+          <p>Multipurpose jacket suitable for rainy days at the ocean, or windy afternoons on the mountain.</p>
+          <div class="sizes">
+            <button class="btn_size btn_xs">XS</button>
+            <button class="btn_size">S</button>
+            <button class="btn_size">M</button>
+            <button class="btn_size">L</button>
+            <button class="btn_size">XL</button>
+          </div>
+          <div class="quantity">
+            <p>Quantity</p>
+            <div class="quantitybtn">
+              <button class="btn_quantity">-</button>
+              <button class="btn_quantitynumber">1</button>
+              <button class="btn_quantity">+</button>
+            </div>
+          </div>
+          <a href="#" class="orangebtn">Add to cart</a>
+          <a href="checkout.html" class="orangebtn">Proceed to Checkout</a>
+        </div>
+        <div class="specification">
+          <h2>Specification</h2>
+          <div>
+            <p>Weight:</p>
+            <p class="light">600g (L)</p>
           </div>
           <div>
-              <h1>Yellow Hike</h1>
-              <div>Multipurpose jacket suitable for rainy days at the ocean, or windy afternoons on the mountain.
-              </div>
-              <button>XS</button>
-              <button>S</button>
-              <button>M</button>
-              <button>L</button>
-              <button>XL</button>
-              <p>Quantity</p>
-              <button>-</button>
-              <button>1</button>
-              <button>+</button>
-              <button>Add to Cart</button>
-              <button>Proceed to Checkout</button>
+            <p>Water column:</p>
+            <p class="light">10 000mm</p>
           </div>
           <div>
-              <div>
-                 <h3>User Review</h3>
-                 <h3>Joe Doe</h3>
-                 <div>Review. Review. Review. Review</div>
-               </div>
-               <div>
-                <h3>User Review</h3>
-                <h3>Joe Doe</h3>
-                <div>Review. Review. Review. Review</div>  
-               </div>
-               <p>Write Review</p>
+            <p>Compression bag:</p>
+            <p class="light">Yes</p>
           </div>
-      </section>
-      <section>
-          <h1>Specification</h1>
-          <p>Weight:</p>
-          <p>600g (L)</p>
-          <p>Water column:</p>
-          <p>10 000mm</p>
-          <p>Compression bag:</p>
-          <p>Yes</p>
-          <p>Windproof:</p>
-          <p>Yes</p>
-          <p>Waterproof:</p>
-          <p>Yes</p>
-          <p>Technology:</p>
-          <p>Gore-Tex</p>
+          <div>
+            <p>Windproof:</p>
+            <p class="light">Yes</p>
+          </div>
+          <div>
+            <p>Waterproof:</p>
+            <p class="light">Yes</p>
+          </div>
+          <div>
+            <p>Technology:</p>
+            <p class="light">Gore-Tex</p>
+          </div>
+        </div>
+        <div class="reviews">
+          <div class="underline review_head">
+            <h3 class="review_heading">User Reviews</h3>
+            <p>
+              <i class="fas fa-star review-star"></i>
+              <i class="fas fa-star review-star"></i>
+              <i class="fas fa-star review-star"></i>
+              <i class="fas fa-star review-star"></i>
+              <i class="far fa-star review-star"></i>
+            </p>
+          </div>
+          <div class="review">
+            <div>
+              <h4 class="review_name">Joe Doe</h4>
+              <p>
+                <i class="fas fa-star review-star"></i>
+                <i class="fas fa-star review-star"></i>
+                <i class="fas fa-star review-star"></i>
+                <i class="fas fa-star review-star"></i>
+                <i class="far fa-star review-star"></i>
+              </p>
+            </div>
+            <p>Review. Review. Review. Review</p>
+          </div>
+          <div class="review">
+            <div>
+              <h4 class="review_name">Jane Doe</h4>
+              <p>
+                <i class="fas fa-star review-star"></i>
+                <i class="fas fa-star review-star"></i>
+                <i class="fas fa-star review-star"></i>
+                <i class="fas fa-star review-star"></i>
+                <i class="far fa-star review-star"></i>
+              </p>
+            </div>
+            <p>Review. Review. Review. Review</p>
+          </div>
+          <a href="#" class="write_review">Write Review</a>
+        </div>
       </section>
     </main>
-    <section>
-        <h1>You may also like</h1>
-        <!--List of Jackets-->
+    <!--List of Jackets-->
+    <section class="alsolike">
+      <div class="listofjackets">
+        <h2>You may also like</h2>
+        <div class="jacket_yellow jacket jacket_1">
+          <img src="images/vectors/01.png" alt="Yellow Hike Jacket" />
+          <h3>Yellow Hike</h3>
+          <p>Jackets for everyday use</p>
+          <div class="stars">
+            <p>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="far fa-star"></i>
+            </p>
+          </div>
+          <p class="price">1999,-</p>
+          <!-- <a href="Yellow-Hike-Women.html" class="jacket-target"></a> -->
+        </div>
+        <div class="jacket_red jacket">
+          <img src="images/vectors/03.png" alt="Red Hike Jacket" />
+          <h3>Red Hike</h3>
+          <p>Jackets for everyday use</p>
+          <div class="stars">
+            <p>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="far fa-star"></i>
+            </p>
+          </div>
+          <p class="price">1999,-</p>
+          <a href="Yellow-Hike-Women.html" class="jacket-target"></a>
+        </div>
+        <div class="jacket_green jacket">
+          <img src="images/vectors/02.png" alt="Green Chill" />
+          <h3>Green Chill</h3>
+          <p>Jackets for everyday use</p>
+          <div class="stars">
+            <p>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="far fa-star"></i>
+            </p>
+          </div>
+          <p class="price">1999,-</p>
+          <a href="Yellow-Hike-Women.html" class="jacket-target"></a>
+        </div>
+        <div class="jacket_yellow jacket jacket_4">
+          <img src="images/vectors/01.png" alt="Yellow Hike Jacket" />
+          <h3>Yellow Hike</h3>
+          <p>Jackets for everyday use</p>
+          <div class="stars">
+            <p>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="far fa-star"></i>
+            </p>
+          </div>
+          <p class="price">1999,-</p>
+          <a href="Yellow-Hike-Women.html" class="jacket-target"></a>
+        </div>
+      </div>
     </section>
     <!--Footer-->
     <footer>
-      <div>
-        <p>Jackets</p>
-        <ul>
-          <li><a href="men.html">Men</a></li>
-          <li><a href="women.html">Women</a></li>
-        </ul>
-      </div>
-      <div>
-        <p>Rainydays</p>
-        <ul>
-          <li><a href="index.html">Home</a></li>
-          <li><a href="contact.html">Contact</a></li>
-          <li><a href="about.html">About</a></li>
-        </ul>
-      </div>
-      <div>
-        <p>Account</p>
-        <ul>
-          <li>Login</li>
-          <li>Create Account</li>
-        </ul>
-      </div>
-      <div>
-        <p>Social</p>
-        <img src="" alt="Facebook">
-        <img src="" alt="Instagram">
-        <img src="" alt="Twitter">
-      </div>
-      <div>
-        <p>© 2020, Rainydays</p>
-        <p>PHUSING THE COMFORT ZONE</p>
-      </div>
-      
+      <section class="footer">
+        <div>
+          <h4>Jackets</h4>
+          <a href="men.html">Men</a>
+          <a href="women.html">Women</a>
+        </div>
+        <div>
+          <h4>Rainydays</h4>
+          <a href="index.html">Home</a>
+          <a href="contact.html">Contact</a>
+          <a href="about.html">About</a>
+        </div>
+        <div>
+          <h4>Account</h4>
+          <a href="#">Login</a>
+          <a href="#">Create Account</a>
+        </div>
+        <div>
+          <h4>Social</h4>
+          <div class="social">
+            <a href="#"><i class="fab fa-facebook"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+          </div>
+        </div>
+      </section>
+      <section class="copyright">
+        <p>&copy; 2021, Rainydays</p>
+        <h4>Pushing the comfort zone</h4>
+      </section>
     </footer>
   </body>
 </html>
