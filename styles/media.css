@@ -13,7 +13,8 @@
     margin: 0 auto;
     gap: 2em;
   }
-  .productmain {
+  .productmain,
+  .checkoutmain {
     width: 80%;
     margin-left: auto;
     margin-right: auto;
@@ -115,6 +116,22 @@
   /* Contact */
   .formheading h2 {
     padding-bottom: 0;
+  }
+  /* Checkout */
+  .formgrid {
+    display: grid;
+    grid-template-columns: 1fr 10% 1fr;
+    grid-template-rows: auto auto;
+    margin-bottom: 1em;
+  }
+  .formgrid_2 {
+    grid-row: 2/3;
+  }
+  .formgrid_3 {
+    grid-column: 3/4;
+  }
+  .formgrid_4 {
+    grid-column: 3/4;
   }
 }
 @media only screen and (min-width: 1000px) {
@@ -316,6 +333,18 @@
 @media only screen and (min-width: 1159px) {
   .contactinfo {
     margin-top: 80px;
+  }
+  /* Checkout */
+  .checkoutform {
+    display: grid;
+    grid-template-columns: 3fr 10% 2fr;
+  }
+  .checkoutform section:nth-child(2) {
+    grid-column: 3/4;
+  }
+  #checkouth2 {
+    margin-top: 0;
+    margin-bottom: 0.55em;
   }
 }
 

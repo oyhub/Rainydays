@@ -273,10 +273,10 @@ footer div {
 .cta,
 .main__men img,
 .main__women img,
-/* .jacket, */
 .searchwrap a {
   transition: 0.3s;
 }
+.orangebtn:hover,
 .searchwrap a:hover,
 #loginbtn:hover,
 input[type="submit"]:hover {

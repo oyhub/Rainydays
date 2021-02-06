@@ -1,0 +1,141 @@
+.checkoutmain {
+  padding-top: 2em;
+  width: 100%;
+  padding-bottom: 2em;
+  background-color: #fff;
+  position: relative;
+  margin-top: 100px;
+}
+.whereonsite {
+  display: flex;
+  font-size: 0.6em;
+  position: absolute;
+  top: 10px;
+  left: 10px;
+}
+.whereonsite a {
+  color: #0a3641;
+  padding: 0 5px;
+}
+
+.checkoutform {
+  width: 80%;
+  margin: 2em auto 0 auto;
+}
+.paymenthp h1 {
+  padding-right: 10px;
+}
+.paymenthp p {
+  font-size: 0.8em;
+}
+.paymenthp {
+  margin-bottom: 1em;
+  display: flex;
+  align-items: baseline;
+  flex-wrap: wrap;
+}
+.checkoutform label {
+  font-size: 0.8em;
+}
+fieldset {
+  border: none;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
+}
+.fieldset {
+  width: 90%;
+  margin: 0 auto;
+}
+input[type="text"],
+input[type="email"] {
+  display: block;
+  border: #0a3641 1px solid;
+  border-radius: 5px;
+  padding: 3px;
+  width: 100%;
+}
+fieldset h3 {
+  margin-top: 1em;
+}
+#checkouth2 {
+  font-size: 1.6em;
+  text-transform: uppercase;
+  font-family: "lato", verdana, sans-serif;
+  font-weight: 600;
+  margin: 1.3em 0 0.5em 0;
+  padding-bottom: 0;
+}
+fieldset label {
+  margin-top: 10px;
+}
+.mmyycvc {
+  display: grid;
+  grid-template-columns: 1fr 10% 1fr;
+  grid-template-rows: auto auto;
+  margin-bottom: 1em;
+}
+
+.mmyycvc .formgrid_2 {
+  grid-row: 2/3;
+}
+.mmyycvc .formgrid_3 {
+  grid-column: 3/4;
+}
+.mmyycvc .formgrid_4 {
+  grid-column: 3/4;
+}
+
+.formflex {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  position: relative;
+}
+
+.total {
+  margin-bottom: 1em;
+}
+.summary div {
+  margin: 0.8em 0 1.2em 0;
+}
+#quantitybtn_2 {
+  margin-bottom: 0.2em;
+  position: absolute;
+  top: 1px;
+  left: 50%;
+}
+.quantitydiv {
+  display: none;
+}
+.btn_size,
+.btn_quantity,
+.btn_quantitynumber {
+  margin: 0;
+  padding: 0;
+  width: 20px;
+  height: 20px;
+  text-align: center;
+  background-color: #fff;
+  border: 1px solid #0a3641;
+  font-size: 10px;
+  color: #0a3641;
+}
+.btn_quantitynumber {
+  background-color: #d4e0e2;
+  border: none;
+  border-top: 1px solid #0a3641;
+  border-bottom: 1px solid #0a3641;
+}
+
+input[type="submit"] {
+  color: #fff;
+  width: 100%;
+  margin: 40px 0 20px;
+  border: none;
+  text-transform: uppercase;
+  padding: 7px 0;
+}
+input[type="text"]:focus,
+input[type="email"]:focus {
+  outline: none;
+  border: #d97904 1px solid;
+}

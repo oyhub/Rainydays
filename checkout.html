@@ -1,81 +1,195 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
   <head>
-    <title>Rainydays | Checkout</title>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="https://use.typekit.net/onj7zyw.css" />
+    <link rel="stylesheet" href="styles/style.css" />
+    <link rel="stylesheet" href="styles/checkout.css" />
+    <link rel="stylesheet" href="styles/iconmenu.css" />
+    <link rel="stylesheet" href="styles/media.css" />
+    <script src="https://kit.fontawesome.com/fa5b77eb46.js" crossorigin="anonymous"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Rainydays | Multipurpose Jackets</title>
   </head>
   <body>
-    <!-- Menu and Hero Image-->
+    <!--Header and nav-->
     <header>
-      <nav>
-        <img src="images/RainyDays_Logo_white.png" alt="logo">
+      <a href="index.html" class="logo"><img src="/images/RainyDays_Logo_white.png" alt="Logo" /></a>
+      <label for="hamburger-menu" class="hamburger-menu"><i class="fas fa-bars"></i></label>
+      <input type="checkbox" id="hamburger-menu" class="hamburger-menu" />
+      <nav class="menu">
         <ul>
-          <li><a href="men.html">Men</a></li>
-          <li><a href="women.html">Women</a></li>
-          <li><a href="about.html">About</a></li>
-          <li><a href="contact.html">Contact</a></li>
+          <li><a href="men.html">men</a></li>
+          <li><a href="women.html">women</a></li>
+          <li><a href="about.html">about</a></li>
+          <li><a href="contact.html">contact</a></li>
         </ul>
-        <img src="" alt="search">
-        <img src="" alt="user">
-        <img src="" alt="cart">
       </nav>
+      <ul class="iconmenu">
+        <li>
+          <label for="search"><i class="fas fa-search"></i></label>
+        </li>
+        <li>
+          <label for="login"><i class="fas fa-user"></i></label>
+        </li>
+        <li>
+          <label for="cart"><i class="fas fa-shopping-cart"></i></label>
+        </li>
+      </ul>
     </header>
-    <!--Main Page-->
-    <main>
-      <div>
-        <p><a href="index.html">Home</a></p>
-        <p>/</p> 
-        <p><a href="Checkout.html">Checkout</a></p>  
+    <!-- Search field -->
+    <section>
+      <input type="checkbox" id="search" />
+      <div class="searchbox">
+        <div class="searchwrap">
+          <label for="search">X</label>
+          <div>
+            <i class="fas fa-search"></i>
+            <p class="searchlabel">Search</p>
+          </div>
+          <input type="text" class="searchfield" placeholder="Type here for search" />
+          <a href="#">Search</a>
+        </div>
+      </div>
+      <!-- User Login -->
+      <input type="checkbox" id="login" />
+      <div class="loginbox">
+        <div class="loginwrap">
+          <label for="login">X</label>
+          <div>
+            <i class="fas fa-user"></i>
+            <p class="loginlabel">Login</p>
+          </div>
+          <input type="text" class="userfield" placeholder="Username" />
+          <input type="password" class="passwordfield" placeholder="Password" />
+          <a href="#" id="loginbtn">Login</a>
+          <a href="#" class="password" id="userhelppw">Forgot password?</a>
+          <span class="margin"><a href="#" class="account" id="userhelpac">Create Account</a></span>
+        </div>
       </div>
 
-    <section>
-        <h1>Payment</h1>
-        <!--Form over here-->
-        <p>Payment form here</p>
+      <!-- Cart -->
+      <input type="checkbox" id="cart" />
+      <div class="cartbox">
+        <div class="cartwrap">
+          <label for="cart">X</label>
+          <div>
+            <i class="fas fa-shopping-cart"></i>
+            <p class="cartlabel">Shoppingcart</p>
+          </div>
+          <p id="empty">Shopping cart is empty</p>
+        </div>
+      </div>
     </section>
-    <section>
-        <h1>Cart</h1>
-        <!--Cart form here-->
-        <p>Cart form here</p>
-    </section>
-    <section>
-        <button>Purchase</button>
-        <button>Continue Shopping</button>
-    </section>
+
+    <!--Main Page-->
+    <main class="checkoutmain">
+      <div class="whereonsite">
+        <p><a href="index.html">Home</a></p>
+        <p>/</p>
+        <p><a href="checkout.html">checkout</a></p>
+      </div>
+
+      <form action="post" class="checkoutform">
+        <section>
+          <div class="paymenthp">
+            <h1>Payment</h1>
+            <p class="orange-text">All field must be filled out</p>
+          </div>
+          <fieldset>
+            <div class="fieldset">
+              <h3>Contact-Info</h3>
+              <label for="email">E-Mail:</label>
+              <input type="email" name="email" id="email" />
+              <label for="confirmemail">Conform E-Mail:</label>
+              <input type="email" name="confirmemail" id="confirmemail" />
+              <h3>Delivery</h3>
+              <label for="name">Name:</label>
+              <input type="text" name="name" id="name" />
+              <label for="adress">Adress:</label>
+              <input type="text" name="adress" id="adress" />
+              <div class="formgrid">
+                <label for="postcode" class="formgrid_1">Postal Code:</label>
+                <input type="text" name="postalcode" id="postcode" class="formgrid_2" />
+                <label for="city" class="formgrid_3">City:</label>
+                <input type="text" name="city" id="city" class="formgrid_4" />
+              </div>
+              <h3>Payment</h3>
+              <label for="name">Name:</label>
+              <input type="text" name="name" id="name" />
+              <label for="card">Cardnumber:</label>
+              <input type="text" name="card" id="card" />
+              <div class="formgrid mmyycvc">
+                <label for="mmyy" class="formgrid_1">MM/YY:</label>
+                <input type="text" name="mmyy" id="mmyy" class="formgrid_2" />
+                <label for="cvc" class="formgrid_3">CVC:</label>
+                <input type="text" name="cvc" id="cvc" class="formgrid_4" />
+              </div>
+            </div>
+          </fieldset>
+        </section>
+
+        <section>
+          <h2 id="checkouth2">Cart</h2>
+          <fieldset>
+            <div class="fieldset summary">
+              <div class="formflex underline_nopadding">
+                <h3>Yellow Hike</h3>
+                <div class="quantitydiv">
+                  <div id="quantitybtn_2">
+                    <button class="btn_quantity">-</button><button class="btn_quantitynumber">1</button
+                    ><button class="btn_quantity">+</button>
+                  </div>
+                </div>
+                <p>1999,-</p>
+              </div>
+              <div class="formflex underline_nopadding">
+                <p>Shipping Cost</p>
+                <p>99,-</p>
+              </div>
+              <div class="formflex underline_nopadding total">
+                <p>Total</p>
+                <p>2098,-</p>
+              </div>
+            </div>
+          </fieldset>
+          <input type="submit" value="Purchase" class="orangebtn" />
+          <a href="index.html" class="orangebtn">Continue Shopping</a>
+        </section>
+      </form>
+    </main>
     <!--Footer-->
     <footer>
-      <div>
-        <p>Jackets</p>
-        <ul>
-          <li><a href="men.html">Men</a></li>
-          <li><a href="women.html">Women</a></li>
-        </ul>
-      </div>
-      <div>
-        <p>Rainydays</p>
-        <ul>
-          <li><a href="index.html">Home</a></li>
-          <li><a href="contact.html">Contact</a></li>
-          <li><a href="about.html">About</a></li>
-        </ul>
-      </div>
-      <div>
-        <p>Account</p>
-        <ul>
-          <li>Login</li>
-          <li>Create Account</li>
-        </ul>
-      </div>
-      <div>
-        <p>Social</p>
-        <img src="" alt="Facebook">
-        <img src="" alt="Instagram">
-        <img src="" alt="Twitter">
-      </div>
-      <div>
-        <p>© 2020, Rainydays</p>
-        <p>PHUSING THE COMFORT ZONE</p>
-      </div>
-      
+      <section class="footer">
+        <div>
+          <h4>Jackets</h4>
+          <a href="men.html">Men</a>
+          <a href="women.html">Women</a>
+        </div>
+        <div>
+          <h4>Rainydays</h4>
+          <a href="index.html">Home</a>
+          <a href="contact.html">Contact</a>
+          <a href="about.html">About</a>
+        </div>
+        <div>
+          <h4>Account</h4>
+          <a href="#">Login</a>
+          <a href="#">Create Account</a>
+        </div>
+        <div>
+          <h4>Social</h4>
+          <div class="social">
+            <a href="#"><i class="fab fa-facebook"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+          </div>
+        </div>
+      </section>
+      <section class="copyright">
+        <p>&copy; 2021, Rainydays</p>
+        <h4>Pushing the comfort zone</h4>
+      </section>
     </footer>
   </body>
 </html>
