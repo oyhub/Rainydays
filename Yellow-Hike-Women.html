@@ -33,7 +33,12 @@
           <label for="login"><i class="fas fa-user"></i></label>
         </li>
         <li>
-          <label for="cart"><i class="fas fa-shopping-cart"></i></label>
+          <div class="cart_div">
+            <label for="cart"><i class="fas fa-shopping-cart"></i></label>
+            <!-- Orange circle -->
+            <input type="checkbox" id="cart_circle" />
+            <div id="orangecircle"></div>
+          </div>
         </li>
       </ul>
     </header>
@@ -118,7 +123,8 @@
               <button class="btn_quantity">+</button>
             </div>
           </div>
-          <a href="#" class="orangebtn">Add to cart</a>
+          <!-- <a href="#" class="orangebtn">Add to cart</a> -->
+          <label for="cart_circle" id="cart_lable" class="orangebtn">Add to cart</label>
           <a href="checkout.html" class="orangebtn">Proceed to Checkout</a>
         </div>
         <div class="specification">

@@ -267,6 +267,7 @@ footer div {
   cursor: pointer;
   color: #d97904;
 }
+
 .searchwrap label:hover {
   cursor: pointer;
 }
@@ -279,7 +280,8 @@ footer div {
 .orangebtn:hover,
 .searchwrap a:hover,
 #loginbtn:hover,
-input[type="submit"]:hover {
+input[type="submit"]:hover,
+#cart_lable:hover {
   outline: 1px solid #d97904;
   background-color: #fff;
   color: #d97904;

@@ -8,6 +8,30 @@ main {
   margin: 0 auto;
 }
 
+/* Cart indicator */
+#cart_circle,
+#orangecircle{
+  display: none;
+}
+#cart_lable{
+  text-transform: uppercase;
+  color: #fff;
+}
+
+#cart_circle:checked ~ #orangecircle {
+  display: block;
+  width: 8px;
+  height: 8px;
+  background-color: #d97904;
+  border-radius: 50%;
+  position: absolute;
+  top: 8px;
+  right: 20px;
+}
+.cart_div{
+  position: relative;
+}
+
 /* Main */
 .productmain {
   width: 100%;
