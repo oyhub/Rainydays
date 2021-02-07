@@ -310,3 +310,12 @@ footer a:hover {
 .footer-current {
   text-decoration: underline;
 }
+.btn_size:hover {
+  background-color: #d4e0e2;
+  cursor: pointer;
+}
+.btn_size:focus {
+  background-color: #d97904;
+  color: #fff;
+  outline: none;
+}
