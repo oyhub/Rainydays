@@ -319,3 +319,6 @@ footer a:hover {
   color: #fff;
   outline: none;
 }
+#success_x:hover {
+  cursor: pointer;
+}
