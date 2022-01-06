@@ -57,6 +57,25 @@ main .contact_bottom {
 }
 
 /* Contact Form */
+#form-ready {
+  padding: 0;
+}
+.form-ready {
+  display: none;
+  font-size: 0.8em;
+  padding-top: 5px;
+  color: #027902;
+  display: none;
+}
+.form-ready .fa-check {
+  margin-left: 10px;
+  align-self: center;
+}
+.form-error {
+  font-size: 0.65em;
+  color: #c50303;
+  display: none;
+}
 .formheading {
   display: flex;
   align-items: baseline;
@@ -71,6 +90,23 @@ main .contact_bottom {
 }
 .contact label {
   font-size: 0.8em;
+}
+#message-check {
+  top: calc(100% - 22px);
+}
+.input {
+  position: relative;
+}
+
+.input .fa-check {
+  color: #027902;
+  font-size: 15px;
+  margin-left: 5px;
+  align-self: center;
+  position: absolute;
+  right: -20px;
+  top: 5px;
+  display: none;
 }
 input[type="text"],
 input[type="email"] {
