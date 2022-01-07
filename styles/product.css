@@ -53,6 +53,69 @@ main {
 }
 
 /* Jacket */
+#add-to-cart {
+  width: 100%;
+  text-transform: uppercase;
+  color: #fff;
+  font-family: Lato, tenon, verdana, sans-serif;
+  border: none;
+  position: relative;
+  display: block;
+ /*  overflow:hidden; */
+}
+#add-to-cart:hover{
+  color: #d97904;
+}
+
+#added-to-cart {
+  height: 10%;
+  width: 10%;
+  background-color: #027902;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  opacity: 0;
+  text-align: center;
+  padding-top: 3px;
+  overflow: hidden;
+  margin-left: -5%;
+  animation: icon 5s ease-in forwards;
+}
+#added-to-cart:hover {
+  color: #fff;
+  border-color: #027902;
+}
+
+@keyframes icon {
+  0%{
+
+  }
+  10%{
+    top: 0;
+    left:0;
+    margin-left: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 1;
+  }
+  92% {
+    top: 0;
+    left:0;
+    margin-left: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 1;
+  }
+  100% {
+    top: 0;
+    left:0;
+    margin-left: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+  }
+}
+
 .jacketspecific {
   display: grid;
   grid-template-rows: auto auto auto;
@@ -96,6 +159,7 @@ h1 {
   justify-content: space-between;
   margin-bottom: 30px;
 }
+
 .btn_size,
 .btn_quantity,
 .btn_quantitynumber {
