@@ -107,6 +107,9 @@ h1 {
   font-size: 15px;
   color: #0a3641;
 }
+.btn_quantity:hover {
+  cursor: pointer;
+}
 .btn_quantitynumber {
   background-color: #d4e0e2;
 }
