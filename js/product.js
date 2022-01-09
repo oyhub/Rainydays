@@ -3,6 +3,7 @@ const plussBtn = document.querySelector("#btn-plus");
 const minusBtn = document.querySelector("#btn-minus");
 const quantity = document.querySelector("#btn-quantity");
 const addToCart = document.querySelector("#add-to-cart");
+const cartText = document.querySelector("#empty");
 
 // Change quantity
 let quantityValue = parseInt(quantity.value);
@@ -33,3 +34,11 @@ function greenBox() {
 }
 
 addToCart.addEventListener("click", greenBox);
+
+//Update cart
+function updateCart() {
+  cartText.innerHTML = `${quantityValue} Yellow Hike Jacket`;
+  console.log("test");
+}
+
+addToCart.addEventListener("click", updateCart);
