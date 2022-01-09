@@ -1,4 +1,6 @@
 const form = document.querySelector("#chekoutform");
+const success = document.querySelector("#successbox");
+const submit = document.querySelector("#submitBtn");
 
 //Input Variables
 const email = document.querySelector("#email");
@@ -105,19 +107,28 @@ function validateForm() {
 
 form.addEventListener("submit", validateForm);
 
-/* //Form ready to submit
-function isFormReady() {
+//Success
+function successScreen() {
   if (
-    chechkLength(fullName.value, 3) &&
-    chechkLength(topic.value, 4) &&
-    chechkLength(message.value, 29) &&
-    validateEmail(email.value)
+    validateEmail(email.value) &&
+    validateEmail(confirmEmail.value) &&
+    chechkLength(deliveryName.value, 4) &&
+    chechkLength(adress.value, 1) &&
+    chechkLength(postalCode.value, 3) &&
+    chechkLength(city.value, 1) &&
+    chechkLength(payName.value, 5) &&
+    chechkLength(cardNumber.value, 11) &&
+    validateDate(cardDate.value) &&
+    validateCvc(cvc.value)
   ) {
-    formReady.style.display = "flex";
+    success.style.display = "block";
+    setTimeout(function () {
+      window.location = "/";
+    }, 5000);
   }
 }
 
-form.addEventListener("keyup", isFormReady); */
+submit.addEventListener("click", successScreen);
 
 //Remove Errormessages & Validation
 function removeErrorMessage() {

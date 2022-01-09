@@ -149,6 +149,14 @@ input[type="email"]:focus {
 #success,
 .successbox {
   display: none;
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(255, 255, 255, 0.45);
+  backdrop-filter: blur(10px);
+  z-index: 1000;
 }
 
 #success:checked ~ .successbox {
