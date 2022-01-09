@@ -196,3 +196,28 @@ input[type="email"]:focus {
   right: 10px;
   font-size: 1.2em;
 }
+
+/* Form Validation */
+.form-ready .fa-check {
+  margin-left: 10px;
+  align-self: center;
+}
+.form-error {
+  font-size: 0.65em;
+  color: #c50303;
+  display: none;
+}
+.input {
+  position: relative;
+  width: calc(100% - 15px);
+}
+.input .fa-check {
+  color: #027902;
+  font-size: 15px;
+  margin-left: 5px;
+  align-self: center;
+  position: absolute;
+  right: -20px;
+  top: 5px;
+  display: none;
+}

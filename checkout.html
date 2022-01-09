@@ -107,7 +107,7 @@
         <p><a href="checkout.html">checkout</a></p>
       </div>
 
-      <form action="post" class="checkoutform">
+      <form id="chekoutform" class="checkoutform">
         <section>
           <div class="paymenthp">
             <h1>Payment</h1>
@@ -117,30 +117,80 @@
             <div class="fieldset">
               <h3>Contact-Info</h3>
               <label for="email">E-Mail:</label>
-              <input type="email" name="email" id="email" />
-              <label for="confirmemail">Conform E-Mail:</label>
-              <input type="email" name="confirmemail" id="confirmemail" />
+              <div class="input">
+                <input type="email" name="email" id="email" />
+                <i class="fas fa-check" id="email-check"></i>
+              </div>
+              <div class="form-error" id="email_error">Please enter a vaild email adress</div>
+              <label for="confirmemail">Confirm E-Mail:</label>
+              <div class="input">
+                <input type="email" name="confirmemail" id="confirmemail" />
+                <i class="fas fa-check" id="confirm-email-check"></i>
+              </div>
+              <div class="form-error" id="confirm-email-error">Please enter a vaild email adress</div>
+              <div class="form-error" id="emails-do-not-match">The emails do not match</div>
               <h3>Delivery</h3>
               <label for="name">Name:</label>
-              <input type="text" name="name" id="name" />
+              <div class="input">
+                <input type="text" name="name" id="name" />
+                <i class="fas fa-check" id="name-check"></i>
+              </div>
+              <div class="form-error" id="name-error">Please enter your name, minimum 5 characters</div>
               <label for="adress">Adress:</label>
-              <input type="text" name="adress" id="adress" />
+              <div class="input">
+                <input type="text" name="adress" id="adress" />
+                <i class="fas fa-check" id="adress-check"></i>
+              </div>
+              <div class="form-error" id="adress-error">Please enter your adress</div>
               <div class="formgrid">
                 <label for="postcode" class="formgrid_1">Postal Code:</label>
-                <input type="text" name="postalcode" id="postcode" class="formgrid_2" />
+                <!-- <input type="text" name="postalcode" id="postcode" class="formgrid_2" /> -->
+                <div class="formgrid_2">
+                  <div class="input">
+                    <input type="text" name="postalcode" id="postcode" />
+                    <i class="fas fa-check" id="postcode-check"></i>
+                  </div>
+                  <div class="form-error" id="postcode-error">Please enter your postcode</div>
+                </div>
                 <label for="city" class="formgrid_3">City:</label>
-                <input type="text" name="city" id="city" class="formgrid_4" />
+                <div class="formgrid_4">
+                  <div class="input">
+                    <input type="text" name="city" id="city" />
+                    <i class="fas fa-check" id="city-check"></i>
+                  </div>
+                  <div class="form-error" id="city-error">Please enter your city</div>
+                </div>
               </div>
               <h3>Payment</h3>
               <label for="payname">Name:</label>
-              <input type="text" name="payname" id="payname" />
+              <div class="input">
+                <input type="text" name="payname" id="payname" />
+                <i class="fas fa-check" id="payname-check"></i>
+              </div>
+              <div class="form-error" id="payname-error">Please enter your name, minimum 5 characters</div>
               <label for="card">Cardnumber:</label>
-              <input type="text" name="card" id="card" />
+              <div class="input">
+                <input type="text" name="card" id="card" />
+                <i class="fas fa-check" id="card-check"></i>
+              </div>
+              <div class="form-error" id="card-error">Please enter a valid card number</div>
               <div class="formgrid mmyycvc">
                 <label for="mmyy" class="formgrid_1">MM/YY:</label>
-                <input type="text" name="mmyy" id="mmyy" class="formgrid_2" />
+                <div class="formgrid_2">
+                  <div class="input">
+                    <input type="text" name="mmyy" id="mmyy" />
+                    <i class="fas fa-check" id="mmyy-check"></i>
+                  </div>
+                  <div class="form-error" id="mmyy-error">Please enter the expiration date</div>
+                </div>
                 <label for="cvc" class="formgrid_3">CVC:</label>
-                <input type="text" name="cvc" id="cvc" class="formgrid_4" />
+                <div class="formgrid_4">
+                  <div class="input">
+                    <input type="text" name="cvc" id="cvc" />
+                    <i class="fas fa-check" id="cvc-check"></i>
+                  </div>
+                  <div class="form-error" id="cvc-error">Please enter the cvc digits</div>
+                </div>
               </div>
             </div>
           </fieldset>
@@ -170,8 +220,8 @@
               </div>
             </div>
           </fieldset>
-          <!-- <input type="submit" value="Purchase" class="orangebtn" /> -->
-          <label for="success" class="orangebtn purchase_btn">Purchase</label>
+          <input type="submit" value="Purchase" class="orangebtn" />
+          <!-- <label for="success" class="orangebtn purchase_btn">Purchase</label> -->
           <a href="index.html" class="orangebtn">Continue Shopping</a>
         </section>
       </form>
@@ -221,5 +271,7 @@
         </div>
       </div>
     </div>
+    <script src="js/component.js"></script>
+    <script src="js/checkout.js"></script>
   </body>
 </html>
