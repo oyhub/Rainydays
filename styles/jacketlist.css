@@ -12,6 +12,7 @@ main {
   padding-bottom: 2em;
   background-color: #fff;
   position: relative;
+  min-height: 300px;
 }
 .whereonsite {
   display: flex;
