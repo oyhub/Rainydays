@@ -14,22 +14,71 @@ async function getProducts() {
   try {
     const response = await fetch(url);
     const results = await response.json();
+    const items = [];
+    const sortFilter = document.querySelector("#sort");
 
     loader.style.display = "none";
     headFilter.style.display = "block";
     listJackets.style.display = "grid";
     listJackets.innerHTML = "";
-    //
-    let sortResults = results.sort();
-    //
-    for (let i = 0; i < sortResults.length; i++) {
-      listJackets.innerHTML += createCard(sortResults[i]);
 
-      if (sortResults[i].featured) {
-        h2Heading.style.display = "block";
-        featured.innerHTML += createCard(sortResults[i]);
+    //Create Array
+    for (let i = 0; i < results.length; i++) {
+      items.push(results[i]);
+    }
+
+    /*    testArray.sort(function (a, b) {
+      return b.price - a.price;
+    }); */
+
+    //Array standard - sorted by name
+    function sortByName(items) {
+      items.sort(function (a, b) {
+        if (a.name > b.name) {
+          return 1;
+        } else if (a.name < b.name) {
+          return -1;
+        } else {
+          return 0;
+        }
+      });
+    }
+    sortByName(items);
+
+    //Create standard page
+    function pageLayout(items) {
+      listJackets.innerHTML = "";
+      for (let i = 0; i < items.length; i++) {
+        listJackets.innerHTML += createCard(items[i]);
+
+        if (items[i].featured) {
+          h2Heading.style.display = "block";
+          featured.innerHTML += createCard(items[i]);
+        }
       }
     }
+    pageLayout(items);
+
+    //Sort results
+    sortFilter.addEventListener("change", testFunction);
+
+    function testFunction() {
+      if (event.target.value === "low2high") {
+        items.sort(function (a, b) {
+          return a.price - b.price;
+        });
+        pageLayout(items);
+      } else if (event.target.value === "high2low") {
+        items.sort(function (a, b) {
+          return b.price - a.price;
+        });
+        pageLayout(items);
+      } else if (event.target.value === "name") {
+        sortByName(items);
+        pageLayout(items);
+      }
+    }
+    console.log(items);
   } catch (error) {
     console.log(error);
   }

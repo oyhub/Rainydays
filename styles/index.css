@@ -73,7 +73,8 @@ main h2 {
 #latest-homepage {
   width: 100%;
   background-color: #fff;
-  padding-bottom: 3em;
+  padding-bottom: 4em;
+  display: none;
 }
 #latest-homepage .container {
   grid-template-rows: auto 1fr 1fr 1fr;
