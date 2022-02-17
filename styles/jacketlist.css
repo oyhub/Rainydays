@@ -32,6 +32,9 @@ main {
 .latest .container {
   margin-top: 2em;
 }
+.latest-h2-heading {
+  display: none;
+}
 
 /* Jackets */
 h1 {
@@ -64,7 +67,14 @@ h1 {
 .listofjackets {
   display: grid;
   grid-template-columns: 1fr;
-  grid-template-rows: repeat(12 1fr);
+  /* grid-template-rows: repeat(12 1fr); */
   gap: 15px;
   justify-items: center;
+}
+
+/* After JS */
+.latest,
+.headfilter,
+.listofjackets {
+  display: none;
 }

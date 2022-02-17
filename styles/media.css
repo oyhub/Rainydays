@@ -400,7 +400,7 @@
   }
   .listofjackets {
     grid-template-columns: 1fr 1fr 1fr 1fr;
-    grid-template-rows: 1fr 1fr 1fr;
+    /* grid-template-rows: 1fr 1fr 1fr; */
   }
   .listofjackets .jacket > p:first-of-type {
     font-size: 0.65em;

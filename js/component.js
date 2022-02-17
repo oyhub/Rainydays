@@ -34,3 +34,38 @@ function validateCard(card) {
   const patternMatch = regExCard.test(card);
   return patternMatch;
 }
+
+//Create Card
+function createCard(result, number = "") {
+  const cardHtml = `        
+    <div class="jacket jacket_${number}">
+    <img src="${result.images[0].src}" alt="${result.images[0].alt}" />
+    <h3>${result.name}</h3>
+    ${result.short_description}
+    <div class="stars">
+      <p>
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+        <i class="far fa-star"></i>
+      </p>
+    </div>
+    <p class="price">${result.price},-</p>
+    <a href="item.html?id=${result.id}" class="jacket-target" aria-label="${result.name}"></a>
+  </div>`;
+
+  return cardHtml;
+}
+
+//Creaate Specification
+function createSpecification(specInfo) {
+  const specHtml = `
+  <div>
+    <p>${specInfo.name}:</p>
+    <p class="light">${specInfo.options[0]}</p>
+  </div>
+`;
+
+  return specHtml;
+}

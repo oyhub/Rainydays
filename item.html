@@ -4,16 +4,13 @@
     <meta charset="UTF-8" />
     <link rel="stylesheet" href="https://use.typekit.net/onj7zyw.css" />
     <link rel="stylesheet" href="styles/style.css" />
-    <link rel="stylesheet" href="styles/jacketlist.css" />
+    <link rel="stylesheet" href="styles/product.css" />
     <link rel="stylesheet" href="styles/iconmenu.css" />
     <link rel="stylesheet" href="styles/media.css" />
     <script src="https://kit.fontawesome.com/fa5b77eb46.js" crossorigin="anonymous"></script>
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta
-      name="description"
-      content="Multipurpose Jackets for men on different adventures. Rainjackets, Windproof jackets and winter jackets for men."
-    />
-    <title>Rainydays | Men</title>
+    <meta name="description" content="" />
+    <title>Rainydays | Women</title>
     <!-- Hotjar Tracking Code for https://rainydays-mobilefirsttest.netlify.app/ -->
     <script>
       (function (h, o, t, j, a, r) {
@@ -39,7 +36,7 @@
       <input type="checkbox" id="hamburger-menu" class="hamburger-menu" />
       <nav class="menu">
         <ul>
-          <li><a href="men.html" class="current">men</a></li>
+          <li><a href="men.html">men</a></li>
           <li><a href="women.html">women</a></li>
           <li><a href="about.html">about</a></li>
           <li><a href="contact.html">contact</a></li>
@@ -53,16 +50,16 @@
           <label for="login"><i class="fas fa-user"></i></label>
         </li>
         <li>
-          <label for="cart"><i class="fas fa-shopping-cart"></i></label>
+          <div class="cart_div">
+            <label for="cart"><i class="fas fa-shopping-cart"></i></label>
+            <!-- Orange circle -->
+            <input type="checkbox" id="cart_circle" />
+            <div id="orangecircle"></div>
+          </div>
         </li>
       </ul>
     </header>
-
-    <!--Hero Image-->
-    <section class="hero">
-      <div class="hero__content">
-        <p>Find the right jacket for your next adventure</p>
-      </div>
+    <section>
       <!-- Search field -->
       <input type="checkbox" id="search" />
       <div class="searchbox">
@@ -106,50 +103,107 @@
         </div>
       </div>
     </section>
-
     <!--Main Page-->
-    <main>
+    <main class="productmain">
+      <div class="loader"></div>
       <div class="whereonsite">
         <p><a href="index.html">Home</a></p>
         <p>/</p>
-        <p><a href="men.html">Men</a></p>
+        <p><a href="men.html">women</a></p>
+        <p>/</p>
+        <p class="this-site"></p>
       </div>
-      <!--Latest Arrivals-->
-      <div class="loader"></div>
-      <section class="latest">
-        <div class="container">
-          <h2 class="latest-h2-heading"><span id="target"></span>Latest Arrivals</h2>
+      <section class="jacketspecific">
+        <div class="specificimages">
+          <img src="images/vectors/01.png" alt="Yellow Hike Jacket" class="item-image bigimg" />
+          <div class="thumbs">
+            <img src="images/vectors/01.png" alt="Yellow Hike Jacket" class="item-image smallimg" />
+            <img src="images/vectors/01.png" alt="Yellow Hike Jacket" class="item-image smallimg" />
+            <img src="images/vectors/01.png" alt="Yellow Hike Jacket" class="item-image smallimg" />
+            <img src="images/vectors/01.png" alt="Yellow Hike Jacket" class="item-image smallimg" />
+          </div>
+        </div>
+        <div class="jacketinfo">
+          <h1>Yellow Hike</h1>
+          <p class="jacket_description">
+            Multipurpose jacket suitable for rainy days at the ocean, or windy afternoons on the mountain.
+          </p>
+          <div class="sizes">
+            <button class="btn_size btn_xs">XS</button>
+            <button class="btn_size">S</button>
+            <button class="btn_size">M</button>
+            <button class="btn_size">L</button>
+            <button class="btn_size">XL</button>
+          </div>
+          <div class="quantity">
+            <p>Quantity</p>
+            <div class="quantitybtn">
+              <button class="btn_quantity" id="btn-minus">-</button>
+              <button class="btn_quantitynumber" id="btn-quantity" value="1">1</button>
+              <button class="btn_quantity" id="btn-plus">+</button>
+            </div>
+          </div>
+          <!-- <a href="#" class="orangebtn">Add to cart</a> -->
+          <!-- <label for="cart_circle" id="cart_lable" class="orangebtn">Add to cart</label> -->
+          <button class="orangebtn" id="add-to-cart">Add to cart</button>
+          <a href="checkout.html" class="orangebtn">Proceed to Checkout</a>
+        </div>
+        <div class="specification">
+          <h2>Specification</h2>
+        </div>
+        <div class="reviews">
+          <div class="underline review_head">
+            <h3 class="review_heading">User Reviews</h3>
+            <p>
+              <i class="fas fa-star review-star"></i>
+              <i class="fas fa-star review-star"></i>
+              <i class="fas fa-star review-star"></i>
+              <i class="fas fa-star review-star"></i>
+              <i class="far fa-star review-star"></i>
+            </p>
+          </div>
+          <div class="review">
+            <div>
+              <h4 class="review_name">Joe Doe</h4>
+              <p>
+                <i class="fas fa-star review-star"></i>
+                <i class="fas fa-star review-star"></i>
+                <i class="fas fa-star review-star"></i>
+                <i class="fas fa-star review-star"></i>
+                <i class="far fa-star review-star"></i>
+              </p>
+            </div>
+            <p>Review. Review. Review. Review</p>
+          </div>
+          <div class="review">
+            <div>
+              <h4 class="review_name">Jane Doe</h4>
+              <p>
+                <i class="fas fa-star review-star"></i>
+                <i class="fas fa-star review-star"></i>
+                <i class="fas fa-star review-star"></i>
+                <i class="fas fa-star review-star"></i>
+                <i class="far fa-star review-star"></i>
+              </p>
+            </div>
+            <p>Review. Review. Review. Review</p>
+          </div>
+          <a href="#" class="write_review">Write Review</a>
         </div>
       </section>
-      <!--List of Jackets-->
-      <div class="headfilter">
-        <h1>Jackets for men</h1>
-        <div class="filter">
-          <div class="sortby">
-            <label for="sort">Sort by:</label>
-            <select name="sort" id="sort">
-              <option value="sales">Most sales</option>
-              <option value="low2high">Low price first</option>
-              <option value="high2low">High price first</option>
-              <option value="audi">Most reviews</option>
-            </select>
-          </div>
-          <div class="filtericon">
-            <p>Filter</p>
-            <i class="fas fa-filter"></i>
-          </div>
-        </div>
-      </div>
-      <div class="listofjackets"></div>
-      <!--List of Jackets-->
     </main>
-
+    <!--List of Jackets-->
+    <section class="alsolike">
+      <div class="listofjackets">
+        <h2 id="also-like-h2" class="hide-h2">You may also like</h2>
+      </div>
+    </section>
     <!--Footer-->
     <footer>
       <section class="footer">
         <div>
           <h4>Jackets</h4>
-          <a href="men.html" class="footer-current">Men</a>
+          <a href="men.html">Men</a>
           <a href="women.html">Women</a>
         </div>
         <div>
@@ -178,6 +232,7 @@
       </section>
     </footer>
     <script src="js/component.js"></script>
-    <script src="js/getproducts.js"></script>
+    <!--   <script src="js/product.js"></script> -->
+    <script src="js/item.js"></script>
   </body>
 </html>

@@ -10,10 +10,10 @@ main {
 
 /* Cart indicator */
 #cart_circle,
-#orangecircle{
+#orangecircle {
   display: none;
 }
-#cart_lable{
+#cart_lable {
   text-transform: uppercase;
   color: #fff;
 }
@@ -28,12 +28,13 @@ main {
   top: 8px;
   right: 20px;
 }
-.cart_div{
+.cart_div {
   position: relative;
 }
 
 /* Main */
 .productmain {
+  min-height: 50vh;
   width: 100%;
   padding-bottom: 2em;
   background-color: #fff;
@@ -61,9 +62,9 @@ main {
   border: none;
   position: relative;
   display: block;
- /*  overflow:hidden; */
+  /*  overflow:hidden; */
 }
-#add-to-cart:hover{
+#add-to-cart:hover {
   color: #d97904;
 }
 
@@ -87,12 +88,11 @@ main {
 }
 
 @keyframes icon {
-  0%{
-
+  0% {
   }
-  8%{
+  8% {
     top: 0;
-    left:0;
+    left: 0;
     margin-left: 0;
     height: 100%;
     width: 100%;
@@ -100,7 +100,7 @@ main {
   }
   92% {
     top: 0;
-    left:0;
+    left: 0;
     margin-left: 0;
     height: 100%;
     width: 100%;
@@ -108,7 +108,7 @@ main {
   }
   100% {
     top: 0;
-    left:0;
+    left: 0;
     margin-left: 0;
     height: 100%;
     width: 100%;
@@ -249,7 +249,6 @@ h1 {
   display: grid;
   grid-template-rows: auto auto;
   grid-template-columns: 1px 1fr 1fr 1fr 1px;
-  
 }
 .alsolike .listofjackets h2 {
   grid-column: 2/6;
@@ -261,4 +260,9 @@ h1 {
   display: none;
 }
 
-.
+/* After JS */
+.jacketspecific,
+.whereonsite,
+.hide-h2 {
+  display: none;
+}
