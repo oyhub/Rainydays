@@ -58,7 +58,7 @@ function createCard(result, number = "") {
   return cardHtml;
 }
 
-//Creaate Specification
+//Create Specification
 function createSpecification(specInfo) {
   const specHtml = `
   <div>
@@ -68,4 +68,9 @@ function createSpecification(specInfo) {
 `;
 
   return specHtml;
+}
+
+//Error
+function displayError(message = "Ups, something did go wrong. Please try again later") {
+  return `<div class="error">${message}</div>`;
 }

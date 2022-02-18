@@ -79,3 +79,26 @@ h1 {
 .listofjackets {
   display: none;
 }
+
+#sort:hover {
+  cursor: pointer;
+}
+
+/* Filter */
+.filtericon:hover {
+  cursor: pointer;
+}
+.filter-div {
+  display: flex;
+  flex-direction: column;
+  font-size: 0.9em;
+  margin-bottom: 40px;
+  padding: 10px 0 10px 30px;
+  background-color: #d97904;
+  color: #fff;
+  border-radius: 30px;
+}
+
+.hide-filter {
+  display: none;
+}

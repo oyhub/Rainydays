@@ -5,6 +5,11 @@
   .btn_size {
     margin-left: 10px;
   }
+  .filter-div {
+    flex-direction: row;
+    justify-content: space-around;
+    padding: 10px 0;
+  }
 }
 @media only screen and (min-width: 700px) {
   .container,
@@ -135,6 +140,9 @@
   }
 }
 @media only screen and (min-width: 1000px) {
+  .filter-div > * {
+    padding-left: 20px;
+  }
   header {
     display: grid;
     grid-template-columns: 226px auto 500px auto 180px;
