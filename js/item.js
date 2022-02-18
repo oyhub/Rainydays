@@ -63,6 +63,20 @@ async function getItem() {
       image[i].src = results.images[0].src;
       image[i].alt = results.images[0].alt;
     }
+
+    //In stock
+    const buttons = document.querySelectorAll(".btn_size");
+    const stockDiv = document.querySelector(".testthis");
+
+    function stockQuantity(element) {
+      console.log(results);
+
+      stockDiv.innerHTML = element.target.value;
+    }
+
+    buttons.forEach((element) => {
+      element.addEventListener("click", stockQuantity);
+    });
   } catch (error) {
     console.log(error);
   }
@@ -81,7 +95,6 @@ async function getProducts() {
     for (let i = 0; i < 4; i++) {
       let number = i + 1;
       listofjackets.innerHTML += createCard(results[i], number);
-      console.log(number);
     }
   } catch (error) {
     console.log(error);
