@@ -1,3 +1,3 @@
 # Rainydays
 
-![Rainydays web page](/images/rainydays.jpg "Optional title")
+![Rainydays web page](/images/Rainydays.jpg)
