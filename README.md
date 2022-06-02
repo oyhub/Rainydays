@@ -34,4 +34,4 @@ npm install
 
 ### Running
 
-To run the website, upload it to your webserver.
+To run the website, upload it to your webserver, and you are ready to go!
