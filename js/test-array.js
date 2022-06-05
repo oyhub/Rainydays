@@ -1,5 +1,5 @@
 //Basic variables
-const baseUrl = "https://www.ballarimedia.no/rainydays/wp-json/wc/v3/products";
+baseUrl = "https://ballarimedia.no/portfolio/wp-json/wc/store/v1/products";
 const urlKey = "ck_da178aed413ef7ad085467fb0c8658c9bdcc0c4c";
 const urlSec = "cs_5e57f946c307554785b15d7b5db7bdadebdc5552";
 const url = baseUrl + "?consumer_key=" + urlKey + "&consumer_secret=" + urlSec;

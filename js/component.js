@@ -37,6 +37,8 @@ function validateCard(card) {
 
 //Create Card
 function createCard(result, number = "") {
+  let price = result.prices.price;
+  price = price.slice(0, -2);
   const cardHtml = `        
     <div class="jacket jacket_${number}">
     <img src="${result.images[0].src}" alt="${result.images[0].alt}" />
@@ -51,7 +53,7 @@ function createCard(result, number = "") {
         <i class="far fa-star"></i>
       </p>
     </div>
-    <p class="price">${result.price},-</p>
+    <p class="price">${price},-</p>
     <a href="item.html?id=${result.id}" class="jacket-target" aria-label="${result.name}"></a>
   </div>`;
 

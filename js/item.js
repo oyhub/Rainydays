@@ -1,12 +1,12 @@
 //Basic variables
-const baseUrl = "https://www.ballarimedia.no/rainydays/wp-json/wc/v3/products";
+const baseUrl = "https://ballarimedia.no/portfolio/wp-json/wc/store/v1/products";
 const urlKey = "?consumer_key=ck_da178aed413ef7ad085467fb0c8658c9bdcc0c4c";
 const urlSec = "&consumer_secret=cs_5e57f946c307554785b15d7b5db7bdadebdc5552";
 const queryString = document.location.search;
 const params = new URLSearchParams(queryString);
 const id = params.get("id");
 const loader = document.querySelector(".loader");
-const url = baseUrl + "/" + id + urlKey + urlSec;
+const url = baseUrl + "/" + id; //+ urlKey + urlSec;
 const url2 = baseUrl + urlKey + urlSec;
 
 //Head Variables
@@ -51,6 +51,8 @@ async function getItem() {
     jacketDescription.innerHTML = results.description.replace(/(<([^>]+)>)/gi, "");
 
     const attributes = results.attributes;
+    console.log(attributes);
+
     for (let i = 0; i < attributes.length; i++) {
       if (attributes[i].name === "Size") {
         continue;
